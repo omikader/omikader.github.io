@@ -1,7 +1,7 @@
 #nav {
   width: 100%;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
+  position: fixed;
+  top: 0;
 }
 #nav ul {
   display: block;
@@ -12,11 +12,7 @@
   display: inline;
   padding-left: 20px;
 }
-#nav li i:active {
-  border-bottom: 2px solid #000;
-  opacity: 1;
-}
 #nav li i:hover {
-  color: #fff;
+  color: #a9a9a9;
   opacity:1;
 }

@@ -4,36 +4,56 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Omar's Personal Website"/>
-  <meta name="author" content="Omar Abdelkader"/>
+  <meta name="description" content="Omar's Personal Website">
+  <meta name="author" content="Omar Abdelkader">
 
   <title>Omar H. Abdelkader</title>
-  <link rel="shortcut icon" href="img/favicon.png"/> <!-- Favicon by alia@writes.email -->
+  <link rel="shortcut icon" href="img/favicon.png"> <!-- Favicon by alia@writes.email -->
   <!-- <link rel="stylesheet" href="css/style.css"/> -->
-  <link rel="stylesheet" href="css/uikit.min.css"/>
+  <link rel="stylesheet" href="css/uikit.min.css">
   <script src="js/uikit.min.js"></script>
   <script src="js/uikit-icons.min.js"></script>
 </head>
 
 <body>
-  <header>
-    <div class="uk-container uk-position-top-center"> 
+  <div class="uk-container uk-position-top-center" id="header"> 
+    <ul class="uk-iconnav">
+      <li><a href="#about" uk-icon="icon: user; ratio: 2" title="About"></a></li>
+      <li><a href="#portfolio" uk-icon="icon: code; ratio: 2" title="Portfolio"></a></li>
+      <li><a href="#work" uk-icon="icon: calendar; ratio: 2" title="Work Experience"></a></li>
+      <li><a href="#education" uk-icon="icon: pencil; ratio: 2" title="Education"></a></li>
+      <li><a href="#skills" uk-icon="icon: list; ratio: 2" title="Skills"></a></li>
+      <li><a href="#contact" uk-icon="icon: mail; ratio: 2" title="Contact"></a></li>
+    </ul>
+  </div>
+
+  <div class="uk-container uk-margin-xlarge-left uk-margin-large-top" id="about">
+    <div class="uk-container">
+      <img src="img/headshot.png">
+    </div>
+    <div class=
+  </div>
+
+
+
+
+
+
+  <hr class="uk-margin-large uk-divider-icon"/>
+  <div id="portfolio"></div>
+  <hr class="uk-margin-large uk-divider-icon"/>
+  <div id="work"></div>
+  <hr class="uk-margin-large uk-divider-icon"/>
+  <div id="education"></div>
+  <hr class="uk-margin-large uk-divider-icon"/>
+  <div id="skills"></div>
+  <hr class="uk-margin-large"/>
+  <div class="uk-container uk-position-bottom-center">
+    <div id="contact">
       <ul class="uk-iconnav">
-        <li><a href="#about" uk-icon="icon: user; ratio: 2" title="About"></a></li>
-        <li><a href="#portfolio" uk-icon="icon: code; ratio: 2" title="Portfolio"></a></li>
-        <li><a href="#work" uk-icon="icon: calendar; ratio: 2" title="Work Experience"></a></li>
-        <li><a href="#education" uk-icon="icon: pencil; ratio: 2" title="Education"></a></li>
-        <li><a href="#skills" uk-icon="icon: list; ratio: 2" title="Skills"></a></li>
-        <li><a href="#contact" uk-icon="icon: mail; ratio: 2" title="Contact"></a></li>
+
       </ul>
     </div>
-  </header>
-
-  <div id="about"></div>
-  <div id="portfolio"></div>
-  <div id="work"></div>
-  <div id="education"></div>
-  <div id="skills"></div>
-  <div id="contact"></div>
+  </div>
 </body>
 </html>

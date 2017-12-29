@@ -1,106 +1,22 @@
-body {
-  margin: 0;
-  padding: 0;
+#nav {
   width: 100%;
-}
-
-h1 {
-  font-family: "Arvo";
-  font-weight: normal;
-  font-size: 55px;
-  text-align: center;
-  color: #fff;
-  margin: 0;
-  padding: 0;
-}
-
-h2 {
-  font-family: "Arvo";
-  font-weight: normal;
-  font-size: 40px;
-  text-align: center;
-  color: #fff;
-  margin: 0;
-  padding: 0;
-}
-
-h3 {
-  font-family: Oswald;
-  font-weight: normal;
-  font-size: 16px;
-  text-align: center;
-  margin: 5px 0;
-  padding: 0;
-  z-index: 1;
-  position: relative;
-}
-
-.content {
-  margin: 0 auto;
-  width: 960px;
-}
-
-#header {
-  width: 100%;
-  background-image: url("../img/header-bg.png");
-  height: 80px;
-  position: fixed;
-  margin-top: 30px;
-}
-
-#logo {
-  float: left;
-  margin-left: -125px;
-  margin-top: 20px;
-  color: #fff;
-  text-decoration: none;
-  font-size: 30px;
-  font-family:"Wellfleet";
-  font-weight: bold;
-}
-
-#nav { 
-  width: 400px;
-  float: right;
-  margin-right: -125px;
-  margin-top: 20px;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
 }
 #nav ul {
-  list-style: none;
   display: block;
-  margin: 0 auto;
-  margin-left: -200px;
   list-style: none;
+  text-align: center;
 }
 #nav li {
-  margin-top: 10px;
-  float: left;
+  display: inline;
   padding-left: 20px;
 }
-#nav li a {
-  color: #fff;
-  opacity: 0.6;
-  font-size: 16px;
-  text-decoration: none;
-  font-family: "Wellfleet";
-}
-#nav li a.active {
-  color: #fff;
+#nav li i:active {
+  border-bottom: 2px solid #000;
   opacity: 1;
-  border-bottom: 2px solid #fff;
 }
-#nav li a:hover {
+#nav li i:hover {
   color: #fff;
   opacity:1;
-}
-
-#about {
-  /* Created by Kjpargeter - Freepik.com */
-  background: url("../img/slide1.jpg") 50% 0 no-repeat fixed;
-  color: #fff;
-  height: 600px;
-  width: 100%;
-  margin: 0;
-  padding: 200px 0 260px 0;
-  background-size: cover;
 }

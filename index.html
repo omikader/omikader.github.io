@@ -17,14 +17,20 @@
 </head>
 
 <body>
-  <ul class="uk-iconnav" uk-sticky="cls-active: uk-navbar-sticky" id="header">
-    <li><a href="#about" uk-icon="icon: user; ratio: 2" title="About"></a></li>
-    <li><a href="#portfolio" uk-icon="icon: code; ratio: 2" title="Portfolio"></a></li>
-    <li><a href="#work" uk-icon="icon: calendar; ratio: 2" title="Work Experience"></a></li>
-    <li><a href="#education" uk-icon="icon: pencil; ratio: 2" title="Education"></a></li>
-    <li><a href="#skills" uk-icon="icon: list; ratio: 2" title="Skills"></a></li>
-    <li><a href="#contact" uk-icon="icon: mail; ratio: 2" title="Contact"></a></li>
-  </ul>
+  <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+    <nav class="uk-navbar-container" uk-navbar>
+      <div class="uk-navbar-center">
+        <ul class="uk-iconnav" id="header">
+          <li><a href="#about" uk-icon="icon: user; ratio: 2" title="About"></a></li>
+          <li><a href="#portfolio" uk-icon="icon: code; ratio: 2" title="Portfolio"></a></li>
+          <li><a href="#work" uk-icon="icon: calendar; ratio: 2" title="Work Experience"></a></li>
+          <li><a href="#education" uk-icon="icon: pencil; ratio: 2" title="Education"></a></li>
+          <li><a href="#skills" uk-icon="icon: list; ratio: 2" title="Skills"></a></li>
+          <li><a href="#contact" uk-icon="icon: mail; ratio: 2" title="Contact"></a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 
   <div class="uk-container" id="about">
     <div class="uk-text-center uk-margin-large-top" uk-grid>

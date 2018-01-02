@@ -33,117 +33,167 @@
     </nav>
   </div>
 
-  <div class="uk-container uk-margin-medium-top" id="about">
-    <div class="uk-text-center" uk-grid>
-      <div class="uk-width-small uk-text-bold">ABOUT ME</div>
-      <div class="uk-width-expand">
-        <div class="uk-text-center uk-child-width-1-2 uk-grid-collapse" uk-grid>
-          <div><img src="img/headshot.png"></div>
+  <div class="uk-section uk-section-default" id="about">
+    <div class="uk-container">
+      <div class="uk-text-center" uk-grid>
+        <div class="uk-width-small uk-text-bold">ABOUT ME</div>
+        <div class="uk-width-expand">
+          <div class="uk-text-center uk-child-width-1-2 uk-grid-collapse" uk-grid>
+            <div><img src="img/headshot.png"></div>
+            <div>
+              <p class="uk-text-justify">
+                My name is Omar Abdelkader. I am an undergraduate student studying computer engineering at the University of Maryland, College Park.
+              </p>
+              <p class="uk-text-justify">
+                My technical interests include software defined networking and IOT network infrastructure/security.
+              </p>
+              <p class="uk-text-justify">
+                I enjoy spending time outside in my free time, including fishing and skiing. In addition, I tune into watch my favorite Premier League side, Liverpool FC, every weekend.
+              </p>
+            </div>
+          </div>       
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="uk-section uk-section-muted" id="portfolio">
+    <div class="uk-container">
+      <div class="uk-text-center" uk-grid>
+        <div class="uk-width-small uk-text-bold">PORTFOLIO</div>
+        <div class="uk-width-expand">
+          <ul class="uk-list">
+            <li>
+              <div class="uk-child-width-1-2 uk-text-center" uk-grid>
+                <div>
+                  <div class="uk-card uk-card-default">
+                    <div class="uk-card-header">
+                      <h3 class="uk-card-title"> Alexa, Rap for Me</h3>
+                    </div>
+                    <div class="uk-card-body">
+                      <p class="uk-text-justify">
+                        At HackNYU 2017, my friends and I created an Amazon Alexa skill that adds Natural Language Processor (NLP) functionality to Amazon Alexa to support realtime "freestyle rapping".
+                      </p>
+                    </div>
+                    <div class="uk-card-footer">
+                      <a href="https://github.com/omikader/AlexaRapForMe" class="uk-icon-button uk-margin-small-right" uk-icon="icon: git-branch"></a>
+                      <a href="https://devpost.com/software/alexa-rap-for-me" class="uk-icon-button" uk-icon="icon: file-edit"></a>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/XTTqoOtF7iE?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                </div>
+              </div>
+            </li>
+            <li class="uk-margin-medium-top">
+              <div class="uk-child-width-1-2 uk-text-center" uk-grid>
+                <div>
+                  <div class="uk-card uk-card-default">
+                    <div class="uk-card-header">
+                      <h3 class="uk-card-title">The N-Robot Formation and Path Tracking Procedure</h3>
+                    </div>
+                    <div class="uk-card-body">
+                      <p class="uk-text-justify">
+                       As a part of an extra credit assignment for our signals and systems course, a few friends and I wrote a MATLAB program to simulate various scenarios where N randomly located autonomous robots must locate each other and then follow a desired path of waypoints.
+                      </p>
+                    </div>
+                    <div class="uk-card-footer">
+                      <a href="https://github.com/omikader/robot-formation" class="uk-icon-button uk-margin-small-right" uk-icon="icon: git-branch"></a>
+                      <a href="https://drive.google.com/file/d/16lsD7CMUqHiQFlJ1pp_4v6KzUHQSFRok/view?usp=sharing" class="uk-icon-button" uk-icon="icon: file-edit"></a>                    
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/13zKa4estTc?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="uk-section uk-section-default" id="work">
+    <div class="uk-container">
+      <div class="uk-text-center" uk-grid>
+        <div class="uk-width-small uk-text-bold">WORK EXPERIENCE</div>
+        <div class="uk-width-expand uk-child-width-1-3 uk-grid-small uk-text-center" uk-grid>
           <div>
-            <p class="uk-text-justify">
-              My name is Omar Abdelkader. I am an undergraduate student studying computer engineering at the University of Maryland, College Park.
-            </p>
-            <p class="uk-text-justify">
-              My technical interests include software defined networking and IOT network infrastructure/security.
-            </p>
-            <p class="uk-text-justify">
-              I enjoy spending time outside in my free time, including fishing and skiing. In addition, I tune into watch my favorite Premier League side, Liverpool FC, every weekend.
-            </p>
+            <div class="uk-card uk-card-default uk-card-body">FACEBOOK</div>
+            <div uk-dropdown>Facebook</div>
           </div>
-        </div>       
-      </div>
-    </div>
-  </div>
-
-  <div class="uk-container uk-margin-large-top" id="portfolio">
-    <div class="uk-text-center" uk-grid>
-      <div class="uk-width-small uk-text-bold">PORTFOLIO</div>
-      <div class="uk-width-expand">
-        <ul class="uk-list">
-          <li>
-            <div class="uk-child-width-1-2 uk-text-center" uk-grid>
-              <div>
-                <div class="uk-card uk-card-default">
-                  <div class="uk-card-header">
-                    <h3 class="uk-card-title"> Alexa, Rap for Me</h3>
-                  </div>
-                  <div class="uk-card-body">
-                    <p class="uk-text-justify">
-                      At HackNYU 2017, my friends and I created an Amazon Alexa skill that adds Natural Language Processor (NLP) functionality to Amazon Alexa to support realtime "freestyle rapping".
-                    </p>
-                  </div>
-                  <div class="uk-card-footer">
-                    <a href="https://github.com/omikader/AlexaRapForMe" class="uk-icon-button uk-margin-small-right" uk-icon="icon: git-branch"></a>
-                    <a href="https://devpost.com/software/alexa-rap-for-me" class="uk-icon-button" uk-icon="icon: file-edit"></a>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/XTTqoOtF7iE?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-              </div>
-            </div>
-          </li>
-          <li class="uk-margin-medium-top">
-            <div class="uk-child-width-1-2 uk-text-center" uk-grid>
-              <div>
-                <div class="uk-card uk-card-default">
-                  <div class="uk-card-header">
-                    <h3 class="uk-card-title">The N-Robot Formation and Path Tracking Procedure</h3>
-                  </div>
-                  <br/>
-                  <div class="uk-card-body">
-                    <p class="uk-text-justify">
-                     As a part of an extra credit assignment for our signals and systems course, a few friends and I wrote a MATLAB program to simulate various scenarios where N randomly located autonomous robots must locate each other and then follow a desired path of waypoints.
-                    </p>
-                  </div>
-                  <div class="uk-card-footer">
-                    <a href="https://github.com/omikader/robot-formation" class="uk-icon-button uk-margin-small-right" uk-icon="icon: git-branch"></a>
-                    <a href="https://drive.google.com/file/d/16lsD7CMUqHiQFlJ1pp_4v6KzUHQSFRok/view?usp=sharing" class="uk-icon-button" uk-icon="icon: file-edit"></a>                    
-                  </div>
-                </div>
-              </div>
-              <div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/13zKa4estTc?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <div class="uk-container uk-margin-large-top" id="work">
-    <div class="uk-text-center" uk-grid>
-      <div class="uk-width-small uk-text-bold">WORK EXPERIENCE</div>
-      <div class="uk-width-expand uk-child-width-1-3 uk-grid-small uk-text-center" uk-grid>
-        <div>
-          <div class="uk-card uk-card-default uk-card-body">FACEBOOK</div>
-          <div uk-dropdown>Facebook</div>
-        </div>
-        <div>
-          <div class="uk-card uk-card-default uk-card-body">ON.LAB</div>
-          <div uk-dropdown>ON.Lab</div>
-        </div>
-        <div>
-          <div class="uk-card uk-card-default uk-card-body">LEIDOS</div>
-          <div uk-dropdown>Leidos</div>
+          <div>
+            <div class="uk-card uk-card-default uk-card-body">ON.LAB</div>
+            <div uk-dropdown>ON.Lab</div>
+          </div>
+          <div>
+            <div class="uk-card uk-card-default uk-card-body">LEIDOS</div>
+            <div uk-dropdown>Leidos</div>
+          </div>
         </div>
       </div>
-    </div>
+    </div>  
   </div>
 
-  <div class="uk-container uk-margin-large-top" id="education">
-    <div class="uk-text-center" uk-grid>
-      <div class="uk-width-small uk-text-bold">EDUCATION</div>
-      <div class="uk-width-medium">
-        <img src="img/umd.png" height="84" width="84">
+  <div class="uk-section uk-section-muted" id="education">
+    <div class="uk-container uk-margin-large-top">
+      <div class="uk-text-center" uk-grid>
+        <div class="uk-width-small uk-text-bold">EDUCATION</div>
+        <div class="uk-width-expand uk-child-width-1-2" uk-grid>
+          <!-- <img src="img/umd.png" height="84" width="84"> -->
+        </div>
       </div>
-    </div>
+    </div> 
   </div>
 
-  <div class="uk-container uk-margin-large-top" id="skills">
-    <div class="uk-text-center" uk-grid>
-      <div class="uk-width-small uk-text-bold">SKILLS</div>
+  <div class="uk-section uk-section-default" id="skills">
+    <div class="uk-container">
+      <div class="uk-text-center" uk-grid>
+        <div class="uk-width-small uk-text-bold">SKILLS</div>
+        <div class="uk-width-expand uk-text-center">
+          <ul class="uk-align-left" uk-accordion="multiple: true">
+            <li>
+              <h3 class="uk-accordion-title">Programming</h3>
+              <div class="uk-accordion-content">
+                <ul class="uk-list">
+                  <li>Java</li>
+                  <li>Python</li>
+                  <li>C/C++</li>
+                  <li>Haskell</li>
+                  <li>HTML, CSS, JavaScript</li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <h3 class="uk-accordion-title">Software</h3>
+              <div class="uk-accordion-content">
+                <ul class="uk-list">
+                  <li>Wireshark</li>
+                  <li>ONOS</li>
+                  <li>Docker</li>
+                  <li>Mininet</li>
+                  <li>Open vSwitch</li>
+                  <li>OpenStack</li>
+                  <li>OpenDaylight</li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <h3 class="uk-accordion-title">OS</h3>
+              <div class="uk-accordion-content">
+                <ul class="uk-list">
+                  <li>Windows</li>
+                  <li>Mac OS X</li>
+                  <li>Linux (Debian, Ubuntu)</li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -153,7 +203,6 @@
     <a href="mailto:omikader@gmail.com" class="uk-icon-button" uk-icon="icon: mail"></a>
   </div>
 
-  <br/>
   <div class="uk-container uk-text-center" id="copyright">
     <p class="uk-text-small">© Omar Abdelkader 2017</p>
   </div>

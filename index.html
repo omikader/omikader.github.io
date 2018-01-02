@@ -16,16 +16,16 @@
 </head>
 
 <body>
-  <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+  <div uk-sticky="sel-target: uk-navbar-container; cls-active: uk-navbar-sticky">
     <nav class="uk-navbar-container" uk-navbar>
       <div class="uk-navbar-center">
         <ul class="uk-iconnav" id="header">
-          <li><a href="#about" uk-scroll uk-icon="icon: user; ratio: 2" title="About"></a></li>
-          <li><a href="#portfolio" uk-scroll uk-icon="icon: code; ratio: 2" title="Portfolio"></a></li>
-          <li><a href="#work" uk-scroll uk-icon="icon: calendar; ratio: 2" title="Work Experience"></a></li>
-          <li><a href="#education" uk-scroll uk-icon="icon: pencil; ratio: 2" title="Education"></a></li>
-          <li><a href="#skills" uk-scroll uk-icon="icon: list; ratio: 2" title="Skills"></a></li>
-          <li><a href="#contact" uk-scroll uk-icon="icon: mail; ratio: 2" title="Contact"></a></li>
+          <li><a href="#about" uk-icon="icon: user; ratio: 2" title="About" uk-scroll></a></li>
+          <li><a href="#portfolio" uk-icon="icon: code; ratio: 2" title="Portfolio" uk-scroll></a></li>
+          <li><a href="#work" uk-icon="icon: calendar; ratio: 2" title="Work Experience" uk-scroll></a></li>
+          <li><a href="#education" uk-icon="icon: pencil; ratio: 2" title="Education" uk-scroll></a></li>
+          <li><a href="#skills" uk-icon="icon: list; ratio: 2" title="Skills" uk-scroll></a></li>
+          <li><a href="#contact" uk-icon="icon: mail; ratio: 2" title="Contact" uk-scroll></a></li>
         </ul>
       </div>
     </nav>
@@ -50,12 +50,12 @@
 
   <div class="uk-container" id="portfolio">
     <div class="uk-text-center uk-margin-large-top" uk-grid>
-      <div class="uk-width-small">PORTFOLIO</div>
+      <div class="uk-width-small uk-text-bold">PORTFOLIO</div>
       <div>
         <ul class="uk-list">
           <li>
             <div class="uk-text-center" uk-grid>
-              <div class="uk-width-small">
+              <div class="uk-width-medium">
                 Alexa, Rap For Me <br/>
                 <a href="https://github.com/omikader/AlexaRapForMe" class="uk-icon-button" uk-icon="icon: git-branch"></a>
                 <a href="https://devpost.com/software/alexa-rap-for-me" class="uk-icon-button" uk-icon="icon: file-edit"></a>
@@ -72,10 +72,10 @@
           </li>
           <li>
             <div class="uk-text-center" uk-grid>
-              <div class="uk-width-small">
+              <div class="uk-width-medium">
                 The N-Robot Formation and Path Tracking Procedure <br/>
                 <a href="https://github.com/omikader/robot-formation" class="uk-icon-button" uk-icon="icon: git-branch"></a>
-                <a href="https://drive.google.com/file/d/16lsD7CMUqHiQFlJ1pp_4v6KzUHQSFRok/view?usp=sharing" class="uk-icon-button uk-margin-small-right" uk-icon="icon: file-edit"></a>
+                <a href="https://drive.google.com/file/d/16lsD7CMUqHiQFlJ1pp_4v6KzUHQSFRok/view?usp=sharing" class="uk-icon-button" uk-icon="icon: file-edit"></a>
               </div>
               <div class="uk-width-medium">
                 <p>
@@ -94,19 +94,19 @@
 
   <div class="uk-container" id="work">
     <div class="uk-text-center uk-margin-large-top" uk-grid>
-      <div class="uk-width-small">WORK EXPERIENCE</div>
+      <div class="uk-width-small uk-text-bold">WORK EXPERIENCE</div>
     </div>
   </div>
 
   <div class="uk-container" id="education">
     <div class="uk-text-center uk-margin-large-top" uk-grid>
-      <div class="uk-width-small">EDUCATION</div>
+      <div class="uk-width-small uk-text-bold">EDUCATION</div>
     </div>
   </div>
 
   <div class="uk-container" id="skills">
     <div class="uk-text-center uk-margin-large-top" uk-grid>
-      <div class="uk-width-small">SKILLS</div>
+      <div class="uk-width-small uk-text-bold">SKILLS</div>
     </div>
   </div>
 

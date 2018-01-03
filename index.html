@@ -37,7 +37,32 @@
         <div class="uk-width-small uk-text-bold">ABOUT ME</div>
         <div class="uk-width-expand">
           <div class="uk-text-center uk-child-width-1-2" uk-grid>
-            <div><img src="img/headshot.png"></div>
+            <div uk-slideshow="animation: push; autoplay: true" class="uk-grid-item-match">
+              <div class="uk-position-relative uk-visible-toggle uk-light">
+                <ul class="uk-slideshow-items">
+                  <li>
+                    <img src="img/slide1.jpg" uk-cover>
+                  </li>
+                  <li>
+                    <img src="img/slide2.jpg" uk-cover>
+                  </li>
+                  <li>
+                    <img src="img/slide3.jpg" uk-cover>
+                  </li>
+                  <li>
+                    <img src="img/slide4.jpg" uk-cover>
+                  </li>
+                </ul>
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+              <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+              </div>
+                <ul class="uk-dotnav uk-flex-center uk-margin">
+                  <li uk-slideshow-item="0"><a href="#">Item 1</a></li>
+                  <li uk-slideshow-item="1"><a href="#">Item 2</a></li>
+                  <li uk-slideshow-item="2"><a href="#">Item 3</a></li>
+                  <li uk-slideshow-item="3"><a href="#">Item 4</a></li>
+                </ul>
+            </div>
             <div>
               <div class="uk-card uk-card-default">
                 <div class="uk-card-header">

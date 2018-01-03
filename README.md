@@ -8,4 +8,4 @@ Built using [UIkit](https://getuikit.com/).
 
 ## Style
 
-Favicon by [Alia Abdelkader](alia@writes.email).
+Favicon by [Alia Abdelkader](mailto:alia@writes.email).

@@ -2,10 +2,10 @@
 
 By Omar Abdelkader. All Rights Reserved.
 
-# Tools
+## Tools
 
 Built using [UIkit](https://getuikit.com/).
 
-# Style
+## Style
 
 Favicon by [Alia Abdelkader](alia@writes.email).

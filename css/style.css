@@ -1,1 +1,5 @@
-font-family: 'Raleway', sans-serif;
+#name-title {
+  color: #000000;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+  font-family: "Roboto", san-serif;
+}

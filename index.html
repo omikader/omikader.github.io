@@ -25,11 +25,11 @@
 
   <title>Omar Abdelkader</title>
 
-  <!-- <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"/>
 
   <link rel="shortcut icon" href="img/favicon.png"/>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" type="text/css" href="css/uikit.min.css"/>
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  <link rel="stylesheet" type="text/css" href="css/uikit.omar.min.css"/>
 
   <script type="text/javascript" src="js/jquery.sticky.js"></script>
   <script type="text/javascript" src="js/uikit.min.js"></script>
@@ -38,19 +38,23 @@
 </head>
 
 <body>
-  <div uk-sticky="sel-target: uk-navbar-container; cls-active: uk-navbar-sticky">
+  <div uk-sticky="sel-target:uk-navbar-container; cls-active:uk-navbar-sticky">
     <nav class="uk-navbar-container" uk-navbar>
       <div class="uk-navbar-center">
         <ul class="uk-iconnav" id="header">
-          <li><a href="#about" uk-icon="icon: user; ratio: 2" title="About" uk-scroll></a></li>
-          <li><a href="#portfolio" uk-icon="icon: code; ratio: 2" title="Portfolio" uk-scroll></a></li>
-          <li><a href="#work" uk-icon="icon: calendar; ratio: 2" title="Work Experience" uk-scroll></a></li>
-          <li><a href="#education" uk-icon="icon: pencil; ratio: 2" title="Education" uk-scroll></a></li>
-          <li><a href="#skills" uk-icon="icon: list; ratio: 2" title="Skills" uk-scroll></a></li>
-          <li><a href="#contact" uk-icon="icon: mail; ratio: 2" title="Contact" uk-scroll></a></li>
+          <li><a href="#about" uk-icon="icon:user; ratio:2" title="About" uk-scroll></a></li>
+          <li><a href="#portfolio" uk-icon="icon:code; ratio:2" title="Portfolio" uk-scroll></a></li>
+          <li><a href="#work" uk-icon="icon:calendar; ratio:2" title="Work Experience" uk-scroll></a></li>
+          <li><a href="#education" uk-icon="icon:pencil; ratio:2" title="Education" uk-scroll></a></li>
+          <li><a href="#skills" uk-icon="icon:list; ratio:2" title="Skills" uk-scroll></a></li>
+          <li><a href="#contact" uk-icon="icon:mail; ratio:2" title="Contact" uk-scroll></a></li>
         </ul>
       </div>
     </nav>
+  </div>
+
+  <div class="uk-background-image@m uk-background-cover uk-height-large uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(img/banner.jpg);">
+    <h1 id="name-title" class="uk-heading-hero" uk-scrollspy="cls:uk-animation-slide-top-small; delay:1000; repeat:true">Omar H. Abdelkader</h1>
   </div>
 
   <div class="uk-section uk-section-default" id="about">
@@ -60,43 +64,20 @@
           <p class="uk-text-bold">ABOUT ME</p>
         </div>
         <div class="uk-width-expand@m">
-          <div class="uk-text-center uk-child-width-1-2@m" uk-grid>
-            <div uk-slideshow="animation: push; autoplay: true; autoplay-interval: 5000" class="uk-grid-item-match">
-              <div class="uk-position-relative uk-visible-toggle uk-light">
-                <ul class="uk-slideshow-items">
-                  <li>
-                    <img src="img/slide1.png" uk-cover>
-                  </li>
-                  <li>
-                    <img src="img/slide2.png" uk-cover>
-                  </li>
-                  <li>
-                    <img src="img/slide3.png" uk-cover>
-                  </li>
-                </ul>
-                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
-              <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
-              </div>
-                <ul class="uk-dotnav uk-flex-center uk-margin">
-                  <li uk-slideshow-item="0"><a href="#">Item 1</a></li>
-                  <li uk-slideshow-item="1"><a href="#">Item 2</a></li>
-                  <li uk-slideshow-item="2"><a href="#">Item 3</a></li>
-                </ul>
-            </div>
+          <div class="uk-text-center uk-grid-divider uk-child-width-1-2@m" uk-grid>
             <div>
-              <div class="uk-card uk-card-default">
-                <div class="uk-card-header">
-                  <h3 class="uk-card-title">OMAR ABDELKADER</h3>
-                </div>
-                <div class="uk-card-body">
-                  <p class="uk-text-justify">
-                    I am an undergraduate computer engineering student at the University of Maryland, College Park. My technical interests include software defined networking and IOT network infrastructure/security.
-                  </p>
-                  <p class="uk-text-justify">
-                    In my free time I enjoy outdoor activities, like fishing and skiing. I tune in to watch my favorite Premier League side, Liverpool FC, every weekend.
-                  </p>
-                </div>
-              </div>
+              <img src="img/about.jpg">
+            </div>
+            <div class="uk-grid-item-match">
+              <p class="uk-text-left">
+                I'm an undergraduate computer engineering student at the University of Maryland, College Park. I enjoy participating at hackathons as a member of Terrapin Hackers and supporting incoming electrical/computer engineering (ECE) students acclimate to the university as an ECE peer mentor.
+              </p>
+              <p class="uk-text-left">
+                My technical background is mostly in computer systems and networking, with my current technical interests being software defined networking and IOT network infrastructure/security. 
+              </p>
+              <p class="uk-text-left">
+                In my free time I enjoy outdoor activities, like fishing and skiing and I always make sure to tune in to watch my favorite Premier League side, Liverpool FC, every weekend.
+              </p>
             </div>
           </div>       
         </div>
@@ -125,8 +106,8 @@
                       </p>
                     </div>
                     <div class="uk-card-footer">
-                      <a href="https://github.com/omikader/AlexaRapForMe" class="uk-icon-button uk-margin-small-right" uk-icon="icon: git-branch"></a>
-                      <a href="https://devpost.com/software/alexa-rap-for-me" class="uk-icon-button" uk-icon="icon: file-edit"></a>
+                      <a href="https://github.com/omikader/AlexaRapForMe" class="uk-icon-button uk-margin-small-right" uk-icon="icon:git-branch"></a>
+                      <a href="https://devpost.com/software/alexa-rap-for-me" class="uk-icon-button" uk-icon="icon:file-edit"></a>
                     </div>
                   </div>
                 </div>
@@ -148,8 +129,8 @@
                       </p>
                     </div>
                     <div class="uk-card-footer">
-                      <a href="https://github.com/omikader/robot-formation" class="uk-icon-button uk-margin-small-right" uk-icon="icon: git-branch"></a>
-                      <a href="https://drive.google.com/file/d/16lsD7CMUqHiQFlJ1pp_4v6KzUHQSFRok/view?usp=sharing" class="uk-icon-button" uk-icon="icon: file-edit"></a>                    
+                      <a href="https://github.com/omikader/robot-formation" class="uk-icon-button uk-margin-small-right" uk-icon="icon:git-branch"></a>
+                      <a href="https://drive.google.com/file/d/16lsD7CMUqHiQFlJ1pp_4v6KzUHQSFRok/view?usp=sharing" class="uk-icon-button" uk-icon="icon:file-edit"></a>                    
                     </div>
                   </div>
                 </div>
@@ -178,6 +159,7 @@
                   <img class="uk-card-title" src="img/facebook.png">
                 </div>
                 <div class="uk-card-body">
+                  SWE Intern<br/>
                   Menlo Park, CA<br/>
                   September - December 2017
                 </div>
@@ -204,6 +186,7 @@
                   <img class="uk-card-title" src="img/onlab.png">
                 </div>
                 <div class="uk-card-body">
+                  MTS Intern<br/>
                   Menlo Park, CA<br/>
                   May - September 2017
                 </div>
@@ -232,6 +215,7 @@
                   <img class="uk-card-title" src="img/leidos.png">
                 </div>
                 <div class="uk-card-body">
+                  SWE Intern<br/>
                   Columbia, MD<br/>
                   March 2015 - August 2016
                 </div>
@@ -269,14 +253,14 @@
             <div class="uk-width-medium@m">
               <img src="img/umd.png" height="200" width="200">
             </div>
-            <div class="uk-width-expand@m">
+            <div class="uk-width-expand@m uk-grid-item-match">
               <div class="uk-card uk-card-default">
                 <div class="uk-card-header">
                   <h3 class="uk-card-title">University of Maryland, College Park</h3>
                 </div>
                 <div class="uk-card-body">
                   <p class="class=uk-text-justify">
-                    B.S. Computer Engineering<br/>
+                    Candidate, B.S. in Computer Engineering<br/>
                     May 2018
                   </p>
                 </div>
@@ -303,7 +287,7 @@
             <dt>OS</dt>
             <dd>Windows, Mac OS X, UNIX, Linux (Debian, Ubuntu)</dd>
             <dt>Networking Software</dt>
-            <dd>Wireshark, <a class="uk-link-muted" href="https://onosproject.org/">ONOS</a>, <a class="uk-link-muted" href="http://mininet.org/">Mininet</a>, OpenDaylight, Open vSwitch</dd>
+            <dd>Wireshark, ONOS, Mininet, OpenDaylight, Open vSwitch</dd>
             <dt>Virtualization</dt>
             <dd>Docker, VMWare, VirtualBox, QEMU-KVM</dd>
             <dt>Cloud Computing</dt>
@@ -317,9 +301,9 @@
   </div>
 
   <div class="uk-container uk-text-center" id="contact">
-    <a href="https://www.linkedin.com/in/omarabdelkader95" class="uk-icon-button uk-margin-small-right" uk-icon="icon: linkedin"></a>
-    <a href="https://github.com/omikader" class="uk-icon-button uk-margin-small-right" uk-icon="icon: github"></a>
-    <a href="mailto:omikader@gmail.com" class="uk-icon-button" uk-icon="icon: mail"></a>
+    <a href="https://www.linkedin.com/in/omarabdelkader95" class="uk-icon-button uk-margin-small-right" uk-icon="icon:linkedin"></a>
+    <a href="https://github.com/omikader" class="uk-icon-button uk-margin-small-right" uk-icon="icon:github"></a>
+    <a href="mailto:omikader@gmail.com" class="uk-icon-button" uk-icon="icon:mail"></a>
   </div>
 
   <div class="uk-container uk-text-center" id="copyright">

@@ -1,6 +1,8 @@
 # My Website
 
-https://omikader.github.io By Omar Abdelkader. All Rights Reserved.
+https://omikader.github.io 
+
+By Omar Abdelkader. All Rights Reserved.
 
 ## Tools
 

@@ -1,2 +1,4 @@
 .DS_Store
-*.less
+audio/
+css/omar.less
+js/konami.js

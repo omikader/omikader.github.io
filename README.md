@@ -12,3 +12,4 @@ Built using [UIkit](https://getuikit.com/).
 
 Favicon design by [Alia Abdelkader](mailto:alia@writes.email).
 
+Banner photo courtesy of [carlainthecity](https://www.instagram.com/carlainthecity/).

@@ -25,7 +25,7 @@
 
   <title>Omar Abdelkader</title>
 
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet">
 
   <link rel="shortcut icon" href="img/favicon.png"/>
   <link rel="stylesheet" type="text/css" href="css/uikit.omar.min.css"/>
@@ -33,7 +33,7 @@
   <script type="text/javascript" src="js/jquery.sticky.js"></script>
   <script type="text/javascript" src="js/uikit.min.js"></script>
   <script type="text/javascript" src="js/uikit-icons.min.js"></script>
-  <script type="text/javascript" src="js/konami.js"></script>
+  <!-- <script type="text/javascript" src="js/konami.js"></script> -->
 </head>
 
 <body>
@@ -52,91 +52,108 @@
     </nav>
   </div>
 
-  <div class="uk-background-cover uk-height-large uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(img/banner.jpg);">
-    <div class="uk-text-center">
-      <h1 class="uk-heading-hero" uk-scrollspy="cls: uk-animation-slide-top-small; delay: 1000; repeat: true">Omar H. Abdelkader</h1>
+  <div class="uk-section-default">
+    <div class="uk-section uk-background-cover uk-background-norepeat uk-flex uk-flex-center uk-flex-middle" style="background-image: url(img/banner.jpg);" uk-height-viewport>
+      <h1 class="uk-heading-primary" uk-scrollspy="cls: uk-animation-slide-top-small; delay: 2000; repeat: true">Omar H. Abdelkader</h1>
     </div>
   </div>
 
-  <div class="uk-section uk-section-muted" id="about">
+  <div class="uk-section uk-section-default" id="about">
     <div class="uk-container">
-      <div class="uk-text-center" uk-grid>
+      <div uk-grid>
         <div class="uk-width-small@m">
-          <p class="uk-text-bold">ABOUT ME</p>
+          <p class="uk-text-bold uk-text-center">ABOUT</p>
         </div>
         <div class="uk-width-expand@m">
-          <div class="uk-text-center uk-grid-divider uk-child-width-1-2@m" uk-grid>
-            <div>
-              <img src="img/about.jpg">
-            </div>
+          <div class="uk-child-width-1-2@m uk-grid-divider" uk-grid>
             <div class="uk-grid-item-match">
-              <p class="uk-text-left">
+              <div uk-slideshow="animation: fade; autoplay: true; autoplay-interval: 5000">
+                <div class="uk-position-relative uk-visible-toggle uk-light">
+                  <ul class="uk-slideshow-items">
+                    <li>
+                      <img src="img/slide0.jpg" uk-cover>
+                    </li>
+                    <li>
+                      <img src="img/slide1.jpg" uk-cover>
+                    </li>
+                    <li>
+                      <img src="img/slide2.jpg" uk-cover>
+                    </li>
+                  </ul>
+                  <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                  <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+                </div>
+                <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin">
+                  <li uk-slideshow-item="0"><a href="#"></a></li>
+                  <li uk-slideshow-item="1"><a href="#"></a></li>
+                  <li uk-slideshow-item="2"><a href="#"></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="uk-text-left">
+              <p>
                 I'm an undergraduate computer engineering student at the University of Maryland, College Park. I enjoy participating at hackathons as a member of Terrapin Hackers and volunteering as a peer mentor to support incoming electrical/computer engineering students as they acclimate to university life.
               </p>
-              <p class="uk-text-left">
+              <p>
                 My technical background is mostly in computer systems and networking. My current technical interests are software defined networking and IOT network infrastructure/security. 
               </p>
-              <p class="uk-text-left">
+              <p>
                 In my free time, I enjoy outdoor activities like fishing and skiing and I always make sure to tune in to watch my favorite Premier League team, Liverpool FC, every weekend.
               </p>
             </div>
-          </div>       
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="uk-section uk-section-default" id="portfolio">
+  <div class="uk-section uk-section-secondary" id="portfolio">
     <div class="uk-container">
-      <div class="uk-text-center" uk-grid>
+      <div uk-grid>
         <div class="uk-width-small@m">
-          <p class="uk-text-bold">PORTFOLIO</p>
+          <p class="uk-text-bold uk-text-center">PORTFOLIO</p>
         </div>
         <div class="uk-width-expand@m">
           <ul class="uk-list">
-            <li>
-              <div class="uk-child-width-1-2@m uk-text-center" uk-grid>
-                <div>
-                  <div class="uk-card uk-card-default">
-                    <div class="uk-card-header">
-                      <h3 class="uk-card-title">Alexa, Rap for Me</h3>
-                    </div>
-                    <div class="uk-card-body">
-                      <p class="uk-text-left">
-                        At HackNYU 2017, my friends and I created an Amazon Alexa skill that adds Natural Language Processor (NLP) functionality to Amazon Alexa to support realtime &quot;freestyle rapping&quot;.
-                      </p>
-                    </div>
-                    <div class="uk-card-footer">
-                      <a href="https://github.com/Eric-Wallace/AlexaRapForMe" class="uk-icon-button uk-margin-small-right" uk-icon="icon: git-branch; ratio: 1.25" title="Code" uk-tooltip="pos: bottom"></a>
-                      <a href="https://devpost.com/software/alexa-rap-for-me" class="uk-icon-button" uk-icon="icon: file-edit; ratio: 1.25" title="Write-Up" uk-tooltip="pos: bottom"></a>
-                    </div>
-                  </div>
+            <li class="uk-text-left">
+              <h3>Alexa, Rap for Me</h3>
+            </li>
+            <li class="uk-text-left">
+              <div uk-grid>
+                <div class="uk-width-expand@m">
+                  <p>
+                    At <a class="uk-link-muted" href="http://hacknyu.org/">HackNYU</a> 2017, my friends and I created a custom Amazon Alexa skill that supports realtime &quot;freestyle rapping&quot; using natural language processing (NLP).
+                  </p>
+                  <p>
+                    We wrote the skill as an AWS Lambda function in Python. Check out the code in GitHub. For a more detailed report on how it works and how we put it together, check out our write-up in Devpost.
+                  </p>
+                  <a href="https://github.com/Eric-Wallace/AlexaRapForMe" class="uk-icon-button uk-margin-small-right" uk-icon="icon: git-branch; ratio: 1.25" title="Code" uk-tooltip="pos: bottom"></a>
+                  <a href="https://devpost.com/software/alexa-rap-for-me" class="uk-icon-button uk-margin-small-right" uk-icon="icon: file-edit; ratio: 1.25" title="Write-Up" uk-tooltip="pos: bottom"></a>
+                  <a href="https://www.youtube.com/watch?v=XTTqoOtF7iE" class="uk-icon-button" uk-icon="icon: youtube; ratio: 1.25" title="Demo" uk-tooltip="pos: bottom"></a>
                 </div>
-                <div class="uk-grid-item-match">
-                  <iframe src="https://www.youtube.com/embed/XTTqoOtF7iE?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                <div class="uk-width-large@m uk-grid-item-match uk-text-center">
+                  <iframe src="https://www.youtube.com/embed/XTTqoOtF7iE?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
               </div>
             </li>
-            <li class="uk-margin-medium-top">
-              <div class="uk-child-width-1-2@m uk-text-center" uk-grid>
-                <div>
-                  <div class="uk-card uk-card-default">
-                    <div class="uk-card-header">
-                      <h3 class="uk-card-title">The N-Robot Formation and Path Tracking Procedure</h3>
-                    </div>
-                    <div class="uk-card-body">
-                      <p class="uk-text-left">
-                       As a part of an extra credit assignment for our signals and systems course, a few friends and I wrote a MATLAB program to simulate various scenarios where &quot;N&quot; randomly located autonomous robots must locate each other and then follow a desired path of waypoints.
-                      </p>
-                    </div>
-                    <div class="uk-card-footer">
-                      <a href="https://github.com/omikader/robot-formation" class="uk-icon-button uk-margin-small-right" uk-icon="icon: git-branch; ratio: 1.25" title="Code" uk-tooltip="pos: bottom"></a>
-                      <a href="https://drive.google.com/file/d/16lsD7CMUqHiQFlJ1pp_4v6KzUHQSFRok/view?usp=sharing" class="uk-icon-button" uk-icon="icon: file-edit; ratio: 1.25" title="Write-Up" uk-tooltip="pos: bottom"></a>                    
-                    </div>
-                  </div>
+            <li class="uk-text-left uk-margin-large-top">
+              <h3>The N-Robot Formation and Path Tracking Procedure</h3>
+            </li>
+            <li class="uk-text-left">
+              <div uk-grid>
+                <div class="uk-width-expand@m">
+                  <p>
+                    For our signals and systems course, my teammates and I wrote a MATLAB program to simulate various scenarios where &quot;N&quot; randomly located autonomous robots must locate each other and then follow a desired path of waypoints.
+                  </p>
+                  <p>
+                    In this video demonstration, four robots line up and follow each other along a series of waypoints using the <a class="uk-link-muted" href="http://www8.cs.umu.se/kurser/TDBD17/VT06/utdelat/Assignment%20Papers/Path%20Tracking%20for%20a%20Miniature%20Robot.pdf">pure pursuit</a> algorithm with an adaptive lookahead distance. For the implementation details, check out the code and technical report in GitHub.
+                  </p>
+                  <a href="https://github.com/omikader/robot-formation" class="uk-icon-button uk-margin-small-right" uk-icon="icon: git-branch; ratio: 1.25" title="Code" uk-tooltip="pos: bottom"></a>
+                  <a href="docs/robot_formation_paper.pdf" class="uk-icon-button uk-margin-small-right" uk-icon="icon: file-edit; ratio: 1.25" title="Write-Up" uk-tooltip="pos: bottom"></a>
+                  <a href="https://www.youtube.com/watch?v=13zKa4estTc" class="uk-icon-button" uk-icon="icon: youtube; ratio: 1.25" title="Demo" uk-tooltip="pos: bottom"></a>
                 </div>
-                <div class="uk-grid-item-match">
-                  <iframe src="https://www.youtube.com/embed/13zKa4estTc?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                <div class="uk-width-large@m uk-grid-item-match uk-text-center">
+                  <iframe src="https://www.youtube.com/embed/13zKa4estTc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
               </div>
             </li>
@@ -146,34 +163,36 @@
     </div>
   </div>
 
-  <div class="uk-section uk-section-muted" id="work">
+  <div class="uk-section uk-section-default" id="work">
     <div class="uk-container">
-      <div class="uk-text-center" uk-grid>
+      <div uk-grid>
         <div class="uk-width-small@m">
-          <p class="uk-text-bold">WORK EXPERIENCE</p>
+          <p class="uk-text-bold uk-text-center">WORK EXPERIENCE</p>
         </div>
         <div class="uk-width-expand@m">
-          <div class="uk-child-width-1-3@m uk-text-center" uk-grid>
-            <div>
-              <div class="uk-card uk-card-default">
+          <div class="uk-child-width-1-3@m" uk-grid>
+            <div class="uk-text-center">
+              <div class="uk-card uk-card-default uk-box-shadow-xlarge">
                 <div class="uk-card-header">
-                  <img class="uk-card-title" src="img/facebook.png">
+                  <img src="img/facebook.png">
                 </div>
                 <div class="uk-card-body">
-                  SWE Intern<br/>
-                  Menlo Park, CA<br/>
-                  September - December 2017
+                  <p>
+                    SWE Intern<br/>
+                    Menlo Park, CA<br/>
+                    September - December 2017
+                  </p>
                 </div>
                 <div class="uk-card-footer">
                   <ul uk-accordion>
-                    <li>
-                      <h3 class="uk-accordion-title uk-text-left uk-margin-remove-bottom">More</h3>
+                    <li class="uk-text-left">
+                      <h3 class="uk-accordion-title uk-margin-remove-bottom">More</h3>
                       <div class="uk-accordion-content">
-                        <p class="uk-text-left">
+                        <p>
                           I developed a Thrift-based RPC microservice that detects and redacts sensitive user-identifiable information (UII) from user-generated content.
                         </p>
-                        <p class="uk-text-left uk-margin-small-top">
-                          I load tested the service to determine the optimal resource allocation and containerization distribution across the many datacenter regions that Facebook runs out of.
+                        <p>
+                          Using various load-testing techniques, I determined the optimal resource allocation and containerization distribution for the service to run reliably across Facebook’s data centers worldwide.
                         </p>
                       </div>
                     </li>
@@ -181,27 +200,29 @@
                 </div>
               </div>
             </div>
-            <div>
-              <div class="uk-card uk-card-default">
+            <div class="uk-text-center">
+              <div class="uk-card uk-card-default uk-box-shadow-xlarge">
                 <div class="uk-card-header">
-                  <img class="uk-card-title" src="img/onlab.png">
+                  <img src="img/onlab.png">
                 </div>
                 <div class="uk-card-body">
-                  MTS Intern<br/>
-                  Menlo Park, CA<br/>
-                  May - September 2017
+                  <p>
+                    MTS Intern<br/>
+                    Menlo Park, CA<br/>
+                    May - September 2017
+                  </p>
                 </div>
                 <div class="uk-card-footer">
                   <ul uk-accordion>
-                    <li>
-                      <h3 class="uk-accordion-title uk-text-left uk-margin-remove-bottom">More</h3>
+                    <li class="uk-text-left">
+                      <h3 class="uk-accordion-title uk-margin-remove-bottom">More</h3>
                       <div class="uk-accordion-content">
-                        <p class="uk-text-left">
+                        <p>
                           <a class="uk-link-muted" href="https://www.opennetworking.org/solutions/m-cord/">M-CORD</a> is an open-source solution for internet service providers that combines software defined networking (SDN) with network function virtualization (NFV) to facilitate rapid service development and the construction of less expensive and more agile telco networks at the edge.
                         </p>
-                        <p class="uk-text-left uk-margin-small-top">
-                          I wrote YAML service profiles used to virtualize mobile network functions into virtual machines and containers for M-CORD. I designed custom Django model policy code to support automated service chaining.
-                        <p class="uk-text-left uk-margin-small-top">
+                        <p>
+                          I wrote YAML service profiles used to virtualize mobile network functions into virtual machines and containers for M-CORD. Using Django, I designed custom model policy code to support automated service chaining.
+                        <p>
                           Click <a class="uk-link-muted" href="https://cord.biterg.io/goto/1c61b6bceefa94e95618a14aba489882">here</a> to view my ON.Lab contributions.
                         </p>
                       </div>
@@ -210,25 +231,27 @@
                 </div>
               </div>
             </div>
-            <div>
-              <div class="uk-card uk-card-default">
+            <div class="uk-text-center">
+              <div class="uk-card uk-card-default uk-box-shadow-xlarge">
                 <div class="uk-card-header">
-                  <img class="uk-card-title" src="img/leidos.png">
+                  <img src="img/leidos.png">
                 </div>
                 <div class="uk-card-body">
-                  SWE Intern<br/>
-                  Columbia, MD<br/>
-                  March 2015 - August 2016
+                  <p>
+                    SWE Intern<br/>
+                    Columbia, MD<br/>
+                    March 2015 - August 2016
+                  </p>
                 </div>
                 <div class="uk-card-footer">
                   <ul uk-accordion>
-                    <li>
-                      <h3 class="uk-accordion-title uk-text-left uk-margin-remove-bottom">More</h3>
+                    <li class="uk-text-left">
+                      <h3 class="uk-accordion-title uk-margin-remove-bottom">More</h3>
                       <div class="uk-accordion-content">
-                        <p class="uk-text-left">
+                        <p>
                           The summer after my sophomore year, I interned for the Cryptographic &amp; Security Testing Laboratory. My main tasks involved performing physical security, algorithm, and self-testing for <a class="uk-link-muted" href="https://csrc.nist.gov/csrc/media/publications/fips/140/2/final/documents/fips1402.pdf">FIPS 140-2</a> validation efforts.
                         </p>
-                        <p class="uk-text-left uk-margin-small-top">
+                        <p>
                           I returned to Leidos during my junior year as an intern for the Attack &amp; Exploitation Lab House where I collaborated with a small team to implement and conduct security research in the field of software defined networking.
                         </p>
                       </div>
@@ -236,51 +259,43 @@
                   </ul>
                 </div>
               </div>
-            </div>     
-          </div>
-        </div>
-      </div>
-    </div>  
-  </div>
-
-  <div class="uk-section uk-section-default" id="education">
-    <div class="uk-container">
-      <div class="uk-text-center" uk-grid>
-        <div class="uk-width-small@m">
-          <p class="uk-text-bold">EDUCATION</p>
-        </div>
-        <div class="uk-width-expand@m">
-          <div class="uk-text-center" uk-grid>
-            <div class="uk-width-medium@m">
-              <img src="img/umd.png" height="200" width="200">
-            </div>
-            <div class="uk-width-expand@m uk-grid-item-match">
-              <div class="uk-card uk-card-default">
-                <div class="uk-card-header">
-                  <h3 class="uk-card-title">University of Maryland, College Park</h3>
-                </div>
-                <div class="uk-card-body">
-                  <p class="uk-text-nowrap">
-                    Candidate, B.S. in Computer Engineering<br/>
-                    May 2018
-                  </p>
-                </div>
-              </div>
             </div>
           </div>
         </div>
       </div>
-    </div> 
+    </div>
   </div>
 
-  <div class="uk-section uk-section-muted" id="skills">
+  <div class="uk-section uk-section-secondary" id="education">
     <div class="uk-container">
-      <div class="uk-text-center" uk-grid>
+      <div uk-grid>
         <div class="uk-width-small@m">
-          <p class="uk-text-bold">SKILLS</p>
+          <p class="uk-text-bold uk-text-center">EDUCATION</p>
+        </div>
+        <div class="uk-width-large@m uk-text-center">
+          <img height="200px" width="200px" src="img/umd.png">
+        </div>
+        <div class="uk-width-large@m uk-flex uk-flex-middle uk-flex-center">
+          <div class="uk-container">
+            <h3 class="uk-margin-remove-bottom">University of Maryland, College Park</h3>
+            <h5 class="uk-margin-remove-top">A. James Clark School of Engineering</h5>
+            <p class="uk-margin-remove-bottom">Candidate, Bachelor of Science</p>
+            <p class="uk-margin-remove-top uk-margin-remove-bottom">Computer Engineering</p>
+            <p class="uk-margin-remove-top">May 2018</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="uk-section uk-section-default" id="skills">
+    <div class="uk-container">
+      <div uk-grid>
+        <div class="uk-width-small@m">
+          <p class="uk-text-bold uk-text-center">SKILLS</p>
         </div>
         <div class="uk-width-expand@m">
-          <dl class="uk-description-list uk-text-left">
+          <dl class="uk-description-list uk-description-list-divider uk-text-left">
             <dt>Programming Languages</dt>
             <dd>Java, Python, C/C++, Haskell, Bash, MATLAB, HTML, CSS</dd>
             <dt>Version Control</dt>
@@ -301,32 +316,30 @@
     </div>
   </div>
 
-  <div class="uk-section uk-section-default" id="contact">
+  <div class="uk-section uk-section-secondary" id="contact">
     <div class="uk-container">
-      <div class="uk-text-center" uk-grid>
+      <div uk-grid>
         <div class="uk-width-small@m">
-          <p class="uk-text-bold">CONTACT</p>
+          <p class="uk-text-bold uk-text-center">CONTACT</p>
         </div>
         <div class="uk-width-expand@m">
-          <div class="uk-child-width-1-2@m uk-text-center" uk-grid>
-            <div>
-              <p class="uk-text-left">
-                To follow my work, check me out on GitHub. If you would like to collaborate or chat, feel free to message me on LinkedIn or shoot me an email.
-              </p>
-            </div>
-            <div>
-              <a href="https://github.com/omikader" class="uk-icon-button uk-margin-small-right" uk-icon="icon: github; ratio: 1.25" title="GitHub" uk-tooltip></a>
-              <a href="https://www.linkedin.com/in/omarabdelkader95" class="uk-icon-button uk-margin-small-right" uk-icon="icon: linkedin; ratio: 1.25" title="LinkedIn" uk-tooltip></a>
-              <a href="mailto:omikader@gmail.com" class="uk-icon-button" uk-icon="icon: mail; ratio: 1.25" title="Email" uk-tooltip></a>
-            </div>
-          </div>
+          <p class="uk-text-left">
+            To see more of my work, check me out on GitHub and follow for updates. If you would like to collaborate or chat, feel free to message me on LinkedIn or shoot me an email.
+          </p>
+        </div>
+        <div class="uk-width-medium@m">
+          <a href="https://github.com/omikader" class="uk-icon-button uk-margin-small-right" uk-icon="icon: github; ratio: 1.25" title="GitHub" uk-tooltip="pos: bottom"></a>
+          <a href="https://www.linkedin.com/in/omarabdelkader95" class="uk-icon-button uk-margin-small-right" uk-icon="icon: linkedin; ratio: 1.25" title="LinkedIn" uk-tooltip="pos: bottom"></a>
+          <a href="mailto:omikader@gmail.com" class="uk-icon-button" uk-icon="icon: mail; ratio: 1.25" title="Email" uk-tooltip="pos: bottom"></a>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="uk-container uk-text-center">
-    <p class="uk-text-small uk-text-muted">&copy; Omar Abdelkader 2018</p>
+  <div class="uk-section uk-section-secondary uk-section-xsmall">
+    <div class="uk-container uk-text-center">
+      <p class="uk-text-small uk-text-muted">&copy; Omar Abdelkader 2018</p>
+    </div>
   </div>
 
 </body>

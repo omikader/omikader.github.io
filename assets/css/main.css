@@ -1,9 +1,9 @@
-/*p {
+p {
   font-family: 'Ubuntu', sans-serif;
-}*/
+}
 
 .uk-navbar-container:not(.uk-navbar-transparent) {
-  background: #000;
+  background: #000000;
   opacity: 0.80;
   filter: alpha(opacity=80);
 }

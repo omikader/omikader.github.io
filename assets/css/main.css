@@ -23,3 +23,7 @@ body {
 .uk-navbar-container:not(.uk-navbar-transparent) > div > .uk-iconnav > li:last-child > a {
   margin-right: 0px;
 }
+
+/*#portfolio, #skills {
+  background: #3581B8;
+}*/

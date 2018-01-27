@@ -44,25 +44,25 @@
       <div class="uk-offcanvas-bar">
         <button class="uk-offcanvas-close" type="button" uk-close></button>
         <ul class="uk-nav uk-nav-primary uk-margin-auto-vertical">
-          <li><a href="#about-me">About Me</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#work-experience">Work Experience</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about" uk-scroll>About Me</a></li>
+          <li><a href="#portfolio" uk-scroll>Portfolio</a></li>
+          <li><a href="#work" uk-scroll>Work Experience</a></li>
+          <li><a href="#education" uk-scroll>Education</a></li>
+          <li><a href="#skills" uk-scroll>Skills</a></li>
+          <li><a href="#contact" uk-scroll>Contact</a></li>
         </ul>
       </div>
     </div>
 
-    <div class="uk-background-cover" style="background-image: url(assets/img/cover.png);" uk-height-viewport>
+    <div class="uk-background-cover uk-background-center-right" style="background-image: url(assets/img/cover.png);" uk-height-viewport>
       <div class="uk-position-top">
         <div uk-sticky="animation: uk-animation-slide-top-small; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent; top: 50">
           <nav class="uk-navbar-container uk-navbar-transparent uk-visible@s" uk-navbar>
             <div class="uk-navbar-center">
               <ul class="uk-iconnav">
-                <li><a href="#about-me" uk-icon="icon: user; ratio: 2" title="About Me" uk-tooltip="pos: bottom" uk-scroll></a></li>
+                <li><a href="#about" uk-icon="icon: user; ratio: 2" title="About Me" uk-tooltip="pos: bottom" uk-scroll></a></li>
                 <li><a href="#portfolio" uk-icon="icon: code; ratio: 2" title="Portfolio" uk-tooltip="pos: bottom" uk-scroll></a></li>
-                <li><a href="#work-experience" uk-icon="icon: calendar; ratio: 2" title="Work Experience" uk-tooltip="pos: bottom" uk-scroll></a></li>
+                <li><a href="#work" uk-icon="icon: calendar; ratio: 2" title="Work Experience" uk-tooltip="pos: bottom" uk-scroll></a></li>
                 <li><a href="#education" uk-icon="icon: pencil; ratio: 2" title="Education" uk-tooltip="pos: bottom" uk-scroll></a></li>
                 <li><a href="#skills" uk-icon="icon: list; ratio: 2" title="Skills" uk-tooltip="pos: bottom" uk-scroll></a></li>
                 <li><a href="#contact" uk-icon="icon: mail; ratio: 2" title="Contact" uk-tooltip="pos: bottom" uk-scroll></a></li>
@@ -73,6 +73,9 @@
         <div uk-sticky="animation: uk-animation-slide-top-small; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent; top: 50">
           <nav class="uk-navbar-container uk-navbar-transparent uk-hidden@s" uk-navbar>
             <div class="uk-navbar-right">
+              <!-- <ul class="uk-iconnav">
+                <li><a href="#" uk-icon="icon: menu; ratio: 1.25" class="uk-padding-small" uk-toggle="target: #mobile-nav"></a></li>
+              </ul> -->
               <ul class="uk-navbar-nav">
                 <li><a href="#" uk-toggle="target: #mobile-nav" uk-navbar-toggle-icon></a></li>
               </ul>
@@ -87,13 +90,13 @@
     </div>
 
     <div class="uk-section uk-section-default" id="about">
-      <div class="uk-container uk-width-5-6@m uk-text-center">
+      <div class="uk-container uk-width-3-4@m uk-text-center">
         <h1 class="uk-heading-primary uk-text-left uk-text-bold">ABOUT ME</h1>
         <h4 class="uk-text-left">
           Computer Engineering undergraduate student at the University of Maryland, College Park. Member of the Terrapin Hackers and peer-mentor for incoming electrical/computer engineering students
         </h4>
         <h4 class="uk-text-left">
-          Tech enthusiast with a strong background in computer systems &amp; networking, and technical interests in software defined networking, machine learning, &amp; web development.
+          Tech enthusiast with a strong background in computer systems &amp; networking and technical interests in software defined networking, machine learning, &amp; web development.
         </h4>
         <h4 class="uk-text-left">
           Fisherman, skier, and avid Liverpool F.C. fan.
@@ -102,7 +105,7 @@
     </div>
 
     <div class="uk-section uk-section-secondary" id="portfolio">
-      <div class="uk-container uk-width-5-6@m">
+      <div class="uk-container uk-width-3-4@m">
         <h1 class="uk-heading-primary uk-text-left uk-text-bold">PORTFOLIO</h1>
         <ul class="uk-list">
           <li class="uk-text-left uk-margin-medium-top">
@@ -152,7 +155,7 @@
     </div>
 
     <div class="uk-section uk-section-default" id="work">
-      <div class="uk-container uk-width-5-6@m">
+      <div class="uk-container uk-width-3-4@m">
         <h1 class="uk-heading-primary uk-text-left uk-text-bold">WORK EXPERIENCE</h1>
         <div class="uk-child-width-1-3@m uk-margin-medium-top" uk-grid>
           <div class="uk-text-center">
@@ -162,7 +165,7 @@
               </div>
               <div class="uk-card-body">
                 <p>
-                  Software Engineering Intern<br/>
+                  SWE Intern<br/>
                   Menlo Park, CA<br/>
                   Sept - Dec 2017
                 </p>
@@ -191,7 +194,7 @@
               </div>
               <div class="uk-card-body">
                 <p>
-                  Member of Technical Staff Intern<br/>
+                  MTS Intern<br/>
                   Menlo Park, CA<br/>
                   May - Sept 2017
                 </p>
@@ -223,7 +226,7 @@
               </div>
               <div class="uk-card-body">
                 <p>
-                  Software Engineering Intern<br/>
+                  SWE Intern<br/>
                   Columbia, MD<br/>
                   Mar 2015 - Aug 2016
                 </p>
@@ -250,28 +253,19 @@
     </div>
 
     <div class="uk-section uk-section-secondary" id="education">
-      <div class="uk-container uk-width-5-6@m">
+      <div class="uk-container uk-width-3-4@m">
         <h1 class="uk-heading-primary uk-text-left uk-text-bold">EDUCATION</h1>
         <div class="uk-margin-medium-top" uk-grid>
-          <div class="uk-width-auto@m uk-text-center">
+          <div class="uk-width-medium@m uk-text-center">
             <img height="200px" width="200px" src="assets/img/umd.png">
           </div>
-          <div class="uk-width-expand@m uk-flex uk-flex-middle uk-flex-center">
+          <div class="uk-width-large@m uk-flex uk-flex-middle uk-flex-center">
             <div class="uk-container">
               <h4 class="uk-margin-remove-bottom">University of Maryland, College Park</h4>
-              <h5 class="uk-margin-remove-top uk-margin-remove-bottom">A. James Clark School of Engineering</h5>
-              <p class="uk-margin-remove-top uk-margin-remove-bottom">Candidate, Bachelor of Science</p>
+              <h5 class="uk-margin-remove-top">A. James Clark School of Engineering</h5>
+              <p class="uk-margin-remove-bottom">Candidate, Bachelor of Science</p>
               <p class="uk-margin-remove-top uk-margin-remove-bottom">Computer Engineering</p>
               <p class="uk-margin-remove-top">May 2018</p>
-            </div>
-          </div>
-          <div class="uk-width-expand@m uk-flex uk-flex-middle uk-flex-center">
-            <div class="uk-container">
-              <h5 class="uk-margin-remove-bottom">Activities &amp; Societies</h5>
-              <p class="uk-margin-remove-top uk-margin-remove-bottom">Terrapin Hackers</p>
-              <p class="uk-margin-remove-top uk-margin-remove-bottom">Muslim Students Association</p>
-              <p class="uk-margin-remove-top uk-margin-remove-bottom">Electrical/Computer Engineering Peer Mentor</p>
-              <p class="uk-margin-remove-top">WMUC-FM News</p>
             </div>
           </div>
         </div>
@@ -279,7 +273,7 @@
     </div>
 
     <div class="uk-section uk-section-default" id="skills">
-      <div class="uk-container uk-width-5-6@m">
+      <div class="uk-container uk-width-3-4@m">
         <h1 class="uk-heading-primary uk-text-left uk-text-bold">SKILLS</h1>
         <dl class="uk-description-list uk-description-list-divider uk-text-left uk-margin-medium-top">
           <dt>Programming Languages</dt>
@@ -301,10 +295,10 @@
     </div>
 
     <div class="uk-section uk-section-secondary" id="contact">
-      <div class="uk-container uk-width-5-6@m uk-text-center">
-        <a href="https://github.com/omikader" class="uk-margin-small-right" uk-icon="icon: github; ratio: 2" title="GitHub" uk-tooltip target="_blank"></a>
-        <a href="https://www.linkedin.com/in/omarabdelkader95" class="uk-margin-small-right" uk-icon="icon: linkedin; ratio: 2" title="LinkedIn" uk-tooltip target="_blank"></a>
-        <a href="https://www.youtube.com/channel/UCefPcfC6gDIubXF4rAOYiXQ" class="uk-margin-small-right" uk-icon="icon: youtube; ratio: 2" title="YouTube" uk-tooltip target="_blank"></a>
+      <div class="uk-container uk-width-3-4m uk-text-center">
+        <a href="https://github.com/omikader" class="uk-margin-small-right" uk-icon="icon: github; ratio: 2" title="GitHub" target="_blank" uk-tooltip></a>
+        <a href="https://www.linkedin.com/in/omarabdelkader95" class="uk-margin-small-right" uk-icon="icon: linkedin; ratio: 2" title="LinkedIn" target="_blank" uk-tooltip></a>
+        <a href="https://www.youtube.com/channel/UCefPcfC6gDIubXF4rAOYiXQ" class="uk-margin-small-right" uk-icon="icon: youtube; ratio: 2" title="YouTube" target="_blank" uk-tooltip></a>
         <a href="mailto:omikader@gmail.com" uk-icon="icon: mail; ratio: 2" title="Email" uk-tooltip></a>
         <p class="uk-text-small">&copy; Omar Abdelkader 2018</p>
       </div>

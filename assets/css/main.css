@@ -1,9 +1,25 @@
-p {
+body {
   font-family: 'Ubuntu', sans-serif;
 }
 
 .uk-navbar-container:not(.uk-navbar-transparent) {
-  background: #000;
+  /*background: #000;*/
   opacity: 0.80;
   filter: alpha(opacity=80);
+}
+
+.uk-navbar-container:not(.uk-navbar-transparent) > div > .uk-iconnav > li {
+  border-right: 1px solid #999;
+}
+
+.uk-navbar-container:not(.uk-navbar-transparent) > div > .uk-iconnav > li > a {
+  margin-right: 10px;
+}
+
+.uk-navbar-container:not(.uk-navbar-transparent) > div > .uk-iconnav > li:last-child {
+  border-right: none;
+}
+
+.uk-navbar-container:not(.uk-navbar-transparent) > div > .uk-iconnav > li:last-child > a {
+  margin-right: 0px;
 }

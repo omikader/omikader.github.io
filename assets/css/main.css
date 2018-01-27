@@ -24,6 +24,11 @@ body {
   margin-right: 0px;
 }
 
+#translucent {
+  opacity: 0.80;
+  filter: alpha(opacity=80);
+}
+
 /*#portfolio, #skills {
   background: #3581B8;
 }*/

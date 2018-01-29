@@ -2,8 +2,8 @@ body {
   font-family: 'Ubuntu', sans-serif;
 }
 
-.uk-navbar-container:not(.uk-navbar-transparent) {
-  /*background: #000;*/
+.uk-navbar-container:not(.uk-navbar-transparent), .translucent {
+  background: #111;
   opacity: 0.80;
   filter: alpha(opacity=80);
 }
@@ -23,12 +23,3 @@ body {
 .uk-navbar-container:not(.uk-navbar-transparent) > div > .uk-iconnav > li:last-child > a {
   margin-right: 0px;
 }
-
-#translucent {
-  opacity: 0.80;
-  filter: alpha(opacity=80);
-}
-
-/*#portfolio, #skills {
-  background: #3581B8;
-}*/

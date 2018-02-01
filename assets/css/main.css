@@ -2,6 +2,10 @@ body {
   font-family: 'Ubuntu', sans-serif;
 }
 
+#intro-text {
+  font-size: 2.5vw;
+}
+
 .uk-navbar-container:not(.uk-navbar-transparent), .translucent {
   background: #111;
   opacity: 0.80;

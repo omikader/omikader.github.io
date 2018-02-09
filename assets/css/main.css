@@ -28,6 +28,11 @@ body {
   margin-right: 0px;
 }
 
+.uk-link-muted {
+  border-bottom: 0.5px dotted #999;
+  text-decoration: none;
+}
+
 #github:hover {
   color: #6e5494;
 }

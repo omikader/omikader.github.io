@@ -27,3 +27,19 @@ body {
 .uk-navbar-container:not(.uk-navbar-transparent) > div > .uk-iconnav > li:last-child > a {
   margin-right: 0px;
 }
+
+#github:hover {
+  color: #6e5494;
+}
+
+#linkedin:hover {
+  color: #007bb6;
+}
+
+#youtube:hover {
+  color: #ff0000;
+}
+
+#email:hover {
+  color: #ffff81;
+}

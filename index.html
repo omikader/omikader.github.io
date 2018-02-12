@@ -28,11 +28,11 @@
   <title>Omar Abdelkader</title>
 
   <!-- UIKit Core CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.35/css/uikit.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/css/uikit.min.css"/>
 
   <!-- UIKit JS and Icons -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.35/js/uikit.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.35/js/uikit-icons.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit-icons.min.js"></script>
 
   <!-- Custom Fonts + CSS -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,700"/>
@@ -108,51 +108,55 @@
 
     <div class="uk-section uk-section-secondary" id="portfolio">
       <div class="uk-container uk-width-3-4@m">
-        <h1 class="uk-heading-primary uk-text-left uk-text-bold">PORTFOLIO</h1>
-        <ul class="uk-list">
-          <li class="uk-text-left uk-margin-medium-top">
-            <h3>&quot;Alexa, Rap for Me&quot;</h3>
-          </li>
-          <li class="uk-text-left">
-            <div uk-grid>
-              <div class="uk-width-expand@m">
-                <p>
-                  At <a class="uk-link-muted" href="http://hacknyu.org/" target="_blank">HackNYU</a> 2017, my friends and I created a custom Amazon Alexa skill that supports real-time &quot;freestyle rapping&quot; using natural language processing (NLP).
-                </p>
-                <p>
-                  We wrote the skill as an AWS Lambda function in Python. Check out the code in GitHub. For a more detailed report on how it works and how we put it together, check out our write-up in Devpost.
-                </p>
-                <a href="https://github.com/Eric-Wallace/AlexaRapForMe" class="uk-icon-button uk-margin-small-right" uk-icon="icon: git-branch; ratio: 1" title="Code" uk-tooltip="pos: bottom" target="_blank"></a>
-                <a href="https://devpost.com/software/alexa-rap-for-me" class="uk-icon-button uk-margin-small-right" uk-icon="icon: file-edit; ratio: 1" title="Write-Up" uk-tooltip="pos: bottom" target="_blank"></a>
-                <a href="https://www.youtube.com/watch?v=XTTqoOtF7iE" class="uk-icon-button" uk-icon="icon: youtube; ratio: 1" title="Demo" uk-tooltip="pos: bottom" target="_blank"></a>
+        <h1 class="uk-heading-primary uk-text-left uk-text-bold uk-margin-medium-bottom">PORTFOLIO</h1>
+        <div class="uk-child-width-1-2@m" uk-grid>
+          <div>
+            <div class="uk-card uk-card-secondary uk-box-shadow-xlarge uk-text-center">
+              <div class="uk-card-header">
+                <h3 class="uk-card-title">&quot;Alexa, Rap for Me&quot;</h3>
               </div>
-              <div class="uk-width-large@m uk-grid-item-match uk-text-center">
+              <div class="uk-card-media-top">
                 <iframe src="https://www.youtube.com/embed/XTTqoOtF7iE?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
               </div>
-            </div>
-          </li>
-          <li class="uk-text-left uk-margin-large-top">
-            <h3>The N-Robot Formation and Path Tracking Procedure</h3>
-          </li>
-          <li class="uk-text-left">
-            <div uk-grid>
-              <div class="uk-width-expand@m">
-                <p>
-                  For our signals and systems course, my teammates and I wrote a MATLAB program to simulate various scenarios where &quot;N&quot; randomly located autonomous robots must locate each other and then follow a desired path of waypoints.
+              <div class="uk-card-body">
+                <p class="uk-text-left">
+                  At <a class="uk-link-muted" href="http://hacknyu.org/" target="_blank">HackNYU</a> 2017, my friends and I created a custom Amazon Alexa skill that supports real-time &quot;freestyle rapping&quot; using natural language processing (NLP).
                 </p>
-                <p>
-                  In this video demonstration, four robots line up and follow each other along a series of waypoints using the <a class="uk-link-muted" href="http://www8.cs.umu.se/kurser/TDBD17/VT06/utdelat/Assignment%20Papers/Path%20Tracking%20for%20a%20Miniature%20Robot.pdf" target="_blank">pure pursuit</a> algorithm with an adaptive lookahead distance. For the implementation details, check out the code and technical report in GitHub.
+                <p class="uk-text-left">
+                  We wrote the skill as an AWS Lambda function in Python. Check out the code in GitHub. For a more detailed report on how it works and how we put it together, check out our write-up in Devpost.
                 </p>
-                <a href="https://github.com/omikader/robot-formation" class="uk-icon-button uk-margin-small-right" uk-icon="icon: git-branch; ratio: 1" title="Code" uk-tooltip="pos: bottom" target="_blank"></a>
-                <a href="assets/docs/robot_formation_paper.pdf" class="uk-icon-button uk-margin-small-right" uk-icon="icon: file-edit; ratio: 1" title="Write-Up" uk-tooltip="pos: bottom" target="_blank"></a>
-                <a href="https://www.youtube.com/watch?v=13zKa4estTc" class="uk-icon-button" uk-icon="icon: youtube; ratio: 1" title="Demo" uk-tooltip="pos: bottom" target="_blank"></a>
+                <div>
+                  <a href="https://github.com/Eric-Wallace/AlexaRapForMe" class="uk-icon-button uk-margin-small-right" uk-icon="icon: git-branch" title="Code" uk-tooltip target="_blank"></a>
+                  <a href="https://devpost.com/software/alexa-rap-for-me" class="uk-icon-button uk-margin-small-right" uk-icon="icon: file-edit" title="Write-Up" uk-tooltip target="_blank"></a>
+                  <a href="https://www.youtube.com/watch?v=XTTqoOtF7iE" class="uk-icon-button" uk-icon="icon: youtube" title="Demo" uk-tooltip target="_blank"></a>
+                </div>
               </div>
-              <div class="uk-width-large@m uk-grid-item-match uk-text-center">
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-card-secondary uk-box-shadow-xlarge uk-text-center">
+              <div class="uk-card-header">
+                <h3 class="uk-card-title">The N-Robot Formation and Path Tracking Procedure</h3>
+              </div>
+              <div class="uk-card-media-top">
                 <iframe src="https://www.youtube.com/embed/13zKa4estTc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
               </div>
+              <div class="uk-card-body">
+                <p class="uk-text-left">
+                  For our signals and systems course, my teammates and I wrote a MATLAB program to simulate various scenarios where &quot;N&quot; randomly located autonomous robots must locate each other and then follow a desired path of waypoints.
+                </p>
+                <p class="uk-text-left">
+                  In the video demonstration, four robots line up and follow each other along a series of waypoints using the <a class="uk-link-muted" href="http://www8.cs.umu.se/kurser/TDBD17/VT06/utdelat/Assignment%20Papers/Path%20Tracking%20for%20a%20Miniature%20Robot.pdf" target="_blank">pure pursuit</a> algorithm with an adaptive lookahead distance. For the implementation details, check out the code and technical report in GitHub.
+                </p>
+                <div>
+                  <a href="https://github.com/omikader/robot-formation" class="uk-icon-button uk-margin-small-right" uk-icon="icon: git-branch" title="Code" uk-tooltip target="_blank"></a>
+                  <a href="assets/docs/robot_formation_paper.pdf" class="uk-icon-button uk-margin-small-right" uk-icon="icon: file-edit" title="Write-Up" uk-tooltip target="_blank"></a>
+                  <a href="https://www.youtube.com/watch?v=13zKa4estTc" class="uk-icon-button" uk-icon="icon: youtube" title="Demo" uk-tooltip target="_blank"></a>
+                </div>
+              </div>
             </div>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
     </div>
 

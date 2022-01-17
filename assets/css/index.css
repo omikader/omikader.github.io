@@ -1,16 +1,21 @@
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
+}
+
+h1 {
+  font-size: 4vmax;
 }
 
 @media only screen and (max-width: 640px) {
   #intro-text {
-  	font-size: 4vw;
+    font-size: 4vw;
   }
 }
 
-.uk-navbar-container:not(.uk-navbar-transparent), .translucent {
+.uk-navbar-container:not(.uk-navbar-transparent),
+.translucent {
   background: #111;
-  opacity: 0.80;
+  opacity: 0.8;
   filter: alpha(opacity=80);
 }
 
@@ -22,11 +27,18 @@ body {
   margin-right: 10px;
 }
 
-.uk-navbar-container:not(.uk-navbar-transparent) > div > .uk-iconnav > li:last-child {
+.uk-navbar-container:not(.uk-navbar-transparent)
+  > div
+  > .uk-iconnav
+  > li:last-child {
   border-right: none;
 }
 
-.uk-navbar-container:not(.uk-navbar-transparent) > div > .uk-iconnav > li:last-child > a {
+.uk-navbar-container:not(.uk-navbar-transparent)
+  > div
+  > .uk-iconnav
+  > li:last-child
+  > a {
   margin-right: 0px;
 }
 
@@ -36,7 +48,7 @@ body {
 }
 
 #github:hover {
-  color: #6e5494;
+  color: #999999;
 }
 
 #linkedin:hover {

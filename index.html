@@ -72,12 +72,12 @@
               >
             </li>
             <li>
-              <a href="#work" uk-scroll
+              <a href="#experience" uk-scroll
                 ><span
                   class="uk-margin-small-right"
                   uk-icon="icon: calendar"
                 ></span
-                >Work Experience</a
+                >Experience</a
               >
             </li>
             <li>
@@ -140,9 +140,9 @@
                   </li>
                   <li>
                     <a
-                      href="#work"
+                      href="#experience"
                       uk-icon="icon: calendar; ratio: 2"
-                      title="Work Experience"
+                      title="Experience"
                       uk-tooltip="pos: bottom"
                       uk-scroll
                     ></a>
@@ -203,180 +203,259 @@
           class="uk-position-center uk-text-center uk-light"
           uk-scrollspy="cls: uk-animation-slide-top-small; target: > span > ; delay: 1000"
         >
-          <span
-            ><h1 class="uk-heading-primary uk-margin-remove-bottom">
+          <span>
+            <h1 class="uk-heading-primary uk-margin-remove-bottom">
               Omar Abdelkader
-            </h1></span
-          >
-          <span
-            ><h4 id="intro-text">
-              Software Engineer // Open-Source Contributor
-            </h4></span
-          >
+            </h1>
+          </span>
+          <span>
+            <h4 id="intro-text">Software Engineer // Open Source Enthusiast</h4>
+          </span>
         </div>
       </div>
 
       <div class="uk-section uk-section-default" id="about">
-        <div class="uk-container uk-width-3-4@m uk-text-center">
-          <h1 class="uk-heading-primary uk-text-left uk-text-bold">ABOUT ME</h1>
-          <h4 class="uk-text-left">
-            Recent graduate from the University of Maryland, College Park with a
-            B.S. in computer engineering. Member of the Terrapin Hackers and
-            peer-mentor for incoming electrical/computer engineering students.
-          </h4>
-          <h4 class="uk-text-left">
-            Tech enthusiast with a strong background in computer systems &amp;
-            networking and technical interests in software defined networking,
-            machine learning, &amp; web development.
-          </h4>
-          <h4 class="uk-text-left">
-            Fisherman, skier, and avid Liverpool F.C. fan.
-          </h4>
+        <div class="uk-container uk-width-4-5@m">
+          <h1 class="uk-heading-primary uk-text-center uk-text-bold">
+            ABOUT ME
+          </h1>
+          <div
+            class="uk-grid-medium uk-flex-middle uk-margin-medium-top"
+            uk-grid
+          >
+            <div class="uk-width-2-3@m">
+              <h4 class="uk-text-left">
+                I'm a computer engineering graduate from the University of
+                Maryland. I love using my software engineering skills to build
+                tools and applications to solve real problems.
+                <span class="uk-text-italic"
+                  >That is, if you think figuring out who the best crossword
+                  puzzle solver amongst your friends is a real problem...
+                </span>
+              </h4>
+              <h4 class="uk-text-left">
+                Currently, I'm working on the
+                <a
+                  class="uk-link-muted"
+                  href="https://www.facebook.com/connectivity/solutions/terragraph"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Terragraph</a
+                >
+                and
+                <a
+                  class="uk-link-muted"
+                  href="https://www.facebook.com/connectivity/solutions/evenstar"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Evenstar</a
+                >
+                projects within the connectivity infrastructure program at
+                Facebook. In addition to software defined networking, my
+                technical interests include machine learning, edge computing,
+                data infrastructure, and serverless application development.
+              </h4>
+              <h4 class="uk-text-left">
+                Outside of work and side projects, I love to spend time outdoors
+                skiing, fishing, biking, and hiking. You can also find me
+                rooting for Liverpool F.C. or trying to spell "Kyrgyzstan"
+                correctly at the occasional trivia night.
+              </h4>
+            </div>
+            <div class="uk-width-1-3@m uk-visible@m">
+              <img src="assets/img/me.png" />
+            </div>
+          </div>
         </div>
       </div>
 
       <div class="uk-section uk-section-secondary" id="portfolio">
-        <div class="uk-container uk-width-3-4@m">
-          <h1
-            class="uk-heading-primary uk-text-left uk-text-bold uk-margin-medium-bottom"
-          >
+        <div class="uk-container uk-width-4-5@m">
+          <h1 class="uk-heading-default uk-text-center uk-text-bold">
             PORTFOLIO
           </h1>
-          <div class="uk-child-width-1-2@m" uk-grid>
+          <div
+            class="uk-child-width-1-2@s uk-child-width-1-3@m uk-margin-medium-top"
+            uk-grid="masonry: true"
+          >
             <div>
               <div
-                class="uk-card uk-card-secondary uk-box-shadow-xlarge uk-text-center"
+                class="uk-card uk-card-secondary uk-box-shadow-xlarge uk-box-shadow-hover-medium"
               >
-                <div class="uk-card-header">
-                  <h3 class="uk-card-title">&quot;Alexa, Rap for Me&quot;</h3>
-                </div>
                 <div class="uk-card-media-top">
-                  <iframe
-                    src="https://www.youtube.com/embed/XTTqoOtF7iE?rel=0"
-                    frameborder="0"
-                    allow="autoplay; encrypted-media"
-                    allowfullscreen
-                  ></iframe>
+                  <img src="assets/img/nytx.png" alt="" />
                 </div>
-                <div class="uk-card-body">
-                  <p class="uk-text-left">
-                    At
-                    <a
-                      class="uk-link-muted"
-                      href="http://hacknyu.org/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      >HackNYU</a
-                    >
-                    2017, my friends and I created a custom Amazon Alexa skill
-                    that supports real-time &quot;freestyle rapping&quot; using
-                    natural language processing (NLP).
-                  </p>
-                  <p class="uk-text-left">
-                    We wrote the skill as an AWS Lambda function in Python.
-                    Check out the code in GitHub. For a more detailed report on
-                    how it works and how we put it together, check out our
-                    write-up in Devpost.
-                  </p>
-                  <div>
-                    <a
-                      href="https://github.com/omikader/AlexaRapForMe"
-                      class="uk-icon-button uk-margin-small-right"
-                      uk-icon="icon: git-branch"
-                      title="Code"
-                      uk-tooltip="pos: bottom"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    ></a>
-                    <a
-                      href="https://devpost.com/software/alexa-rap-for-me"
-                      class="uk-icon-button uk-margin-small-right"
-                      uk-icon="icon: file-edit"
-                      title="Write-Up"
-                      uk-tooltip="pos: bottom"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    ></a>
-                    <a
-                      href="https://www.youtube.com/watch?v=XTTqoOtF7iE"
-                      class="uk-icon-button"
-                      uk-icon="icon: youtube"
-                      title="Demo"
-                      uk-tooltip="pos: bottom"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    ></a>
+                <div class="uk-card-header">
+                  <div class="uk-text-left">
+                    <h3 class="uk-card-title uk-margin-remove-bottom">nytx</h3>
+                    <p class="uk-text-meta uk-margin-remove-top">
+                      <time>January 2022</time>
+                    </p>
                   </div>
+                  <span class="uk-badge">AWS</span>
+                  <span class="uk-badge">React</span>
+                  <span class="uk-badge">TypeScript</span>
+                  <span class="uk-badge">Python</span>
+                  <span class="uk-badge">Apollo GraphQL</span>
+                  <span class="uk-badge">SST</span>
+                </div>
+                <div
+                  class="uk-card-body uk-padding-remove-top uk-padding-remove-bottom"
+                >
+                  <p>
+                    Serverless AWS application that scrapes and stores my
+                    friends' NYT mini crossword times. Results displayed in a
+                    React SPA.
+                  </p>
+                </div>
+                <div class="uk-card-footer uk-text-center">
+                  <a
+                    href="https://github.com/omikader/nytx"
+                    class="uk-icon-button uk-margin-small-right"
+                    uk-icon="icon: git-branch"
+                    title="Code"
+                    uk-tooltip="pos: bottom"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  ></a>
+                  <a
+                    href="https://nytx.omikader.com/"
+                    class="uk-icon-button uk-margin-small-right"
+                    uk-icon="icon: world"
+                    title="Website"
+                    uk-tooltip="pos: bottom"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  ></a>
+                  <a
+                    href="https://api.nytx.omikader.com/"
+                    class="uk-icon-button"
+                    uk-icon="icon: cog"
+                    title="API"
+                    uk-tooltip="pos: bottom"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  ></a>
                 </div>
               </div>
             </div>
             <div>
               <div
-                class="uk-card uk-card-secondary uk-box-shadow-xlarge uk-text-center"
+                class="uk-card uk-card-secondary uk-box-shadow-xlarge uk-box-shadow-hover-medium"
               >
-                <div class="uk-card-header">
-                  <h3 class="uk-card-title">
-                    The N-Robot Formation and Path Tracking Procedure
-                  </h3>
-                </div>
                 <div class="uk-card-media-top">
+                  <img src="assets/img/aiorobinhood.png" alt="" />
+                </div>
+                <div class="uk-card-header">
+                  <div class="uk-text-left">
+                    <h3 class="uk-card-title uk-margin-remove-bottom">
+                      aiorobinhood
+                    </h3>
+                    <p class="uk-text-meta uk-margin-remove-top">
+                      <time>July 2020</time>
+                    </p>
+                  </div>
+                  <span class="uk-badge">Python</span>
+                  <span class="uk-badge">asyncio</span>
+                  <span class="uk-badge">API</span>
+                  <span class="uk-badge">REST</span>
+                  <span class="uk-badge">GitHub Actions</span>
+                </div>
+                <div
+                  class="uk-card-body uk-padding-remove-top uk-padding-remove-bottom"
+                >
+                  <p>
+                    "Unofficial" asynchronous Robinhood API built in Python
+                    using <code>asyncio</code> and <code>aiohttp</code> to
+                    programmatically trade stocks.
+                  </p>
+                </div>
+                <div class="uk-card-footer uk-text-center">
+                  <a
+                    href="https://github.com/omikader/aiorobinhood"
+                    class="uk-icon-button uk-margin-small-right"
+                    uk-icon="icon: git-branch"
+                    title="Code"
+                    uk-tooltip="pos: bottom"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  ></a>
+                  <a
+                    href="https://aiorobinhood.readthedocs.io/"
+                    class="uk-icon-button"
+                    uk-icon="icon: world"
+                    title="Docs"
+                    uk-tooltip="pos: bottom"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div
+                class="uk-card uk-card-secondary uk-box-shadow-xlarge uk-box-shadow-hover-medium"
+              >
+                <div class="uk-card-media-top uk-flex uk-flex-center">
                   <iframe
-                    src="https://www.youtube.com/embed/13zKa4estTc?rel=0"
+                    src="https://www.youtube.com/embed/XTTqoOtF7iE?rel=0"
                     frameborder="0"
                     allow="autoplay; encrypted-media"
                     allowfullscreen
+                    uk-responsive
                   ></iframe>
                 </div>
-                <div class="uk-card-body">
-                  <p class="uk-text-left">
-                    For our signals and systems course, my teammates and I wrote
-                    a MATLAB program to simulate various scenarios where
-                    &quot;N&quot; randomly located autonomous robots must locate
-                    each other and then follow a desired path of waypoints.
-                  </p>
-                  <p class="uk-text-left">
-                    In the video demonstration, four robots line up and follow
-                    each other along a series of waypoints using the
-                    <a
-                      class="uk-link-muted"
-                      href="http://www8.cs.umu.se/kurser/TDBD17/VT06/utdelat/Assignment%20Papers/Path%20Tracking%20for%20a%20Miniature%20Robot.pdf"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      >pure pursuit</a
-                    >
-                    algorithm with an adaptive lookahead distance. For the
-                    implementation details, check out the code and technical
-                    report in GitHub.
-                  </p>
-                  <div>
-                    <a
-                      href="https://github.com/omikader/robot-formation"
-                      class="uk-icon-button uk-margin-small-right"
-                      uk-icon="icon: git-branch"
-                      title="Code"
-                      uk-tooltip="pos: bottom"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    ></a>
-                    <a
-                      href="assets/docs/robot_formation_paper.pdf"
-                      class="uk-icon-button uk-margin-small-right"
-                      uk-icon="icon: file-edit"
-                      title="Write-Up"
-                      uk-tooltip="pos: bottom"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    ></a>
-                    <a
-                      href="https://www.youtube.com/watch?v=13zKa4estTc"
-                      class="uk-icon-button"
-                      uk-icon="icon: youtube"
-                      title="Demo"
-                      uk-tooltip="pos: bottom"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    ></a>
+                <div class="uk-card-header">
+                  <div class="uk-text-left">
+                    <h3 class="uk-card-title uk-margin-remove-bottom">
+                      &quot;Alexa, Rap for Me&quot;
+                    </h3>
+                    <p class="uk-text-meta uk-margin-remove-top">
+                      <time>February 2017</time>
+                    </p>
                   </div>
+                  <span class="uk-badge">AWS</span>
+                  <span class="uk-badge">Alexa</span>
+                  <span class="uk-badge">Python</span>
+                  <span class="uk-badge">REST</span>
+                </div>
+                <div
+                  class="uk-card-body uk-padding-remove-top uk-padding-remove-bottom"
+                >
+                  <p>
+                    At HackNYU 2017, our team created a custom Amazon Alexa
+                    skill that supports real-time "freestyle rapping" using
+                    natural language processing (NLP).
+                  </p>
+                </div>
+                <div class="uk-card-footer uk-text-center">
+                  <a
+                    href="https://github.com/omikader/AlexaRapForMe"
+                    class="uk-icon-button uk-margin-small-right"
+                    uk-icon="icon: git-branch"
+                    title="Code"
+                    uk-tooltip="pos: bottom"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  ></a>
+                  <a
+                    href="https://devpost.com/software/alexa-rap-for-me"
+                    class="uk-icon-button uk-margin-small-right"
+                    uk-icon="icon: file-edit"
+                    title="Write-Up"
+                    uk-tooltip="pos: bottom"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  ></a>
+                  <a
+                    href="https://www.youtube.com/watch?v=XTTqoOtF7iE"
+                    class="uk-icon-button"
+                    uk-icon="icon: youtube"
+                    title="Demo"
+                    uk-tooltip="pos: bottom"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  ></a>
                 </div>
               </div>
             </div>
@@ -384,14 +463,15 @@
         </div>
       </div>
 
-      <div class="uk-section uk-section-default" id="work">
-        <div class="uk-container uk-width-3-4@m">
-          <h1 class="uk-heading-primary uk-text-left uk-text-bold">
-            WORK EXPERIENCE
-          </h1>
-        </div>
+      <div class="uk-section uk-section-default" id="experience">
         <div class="uk-container uk-width-4-5@m">
-          <div class="uk-child-width-1-3@m uk-margin-medium-top" uk-grid>
+          <h1 class="uk-heading-primary uk-text-center uk-text-bold">
+            EXPERIENCE
+          </h1>
+          <div
+            class="uk-child-width-1-2@s uk-child-width-1-3@m uk-margin-medium-top"
+            uk-grid
+          >
             <div class="uk-text-center">
               <div
                 class="uk-card uk-card-default uk-box-shadow-xlarge uk-box-shadow-hover-medium"
@@ -410,7 +490,9 @@
                   <ul uk-accordion>
                     <li class="uk-text-left">
                       <h3 class="uk-accordion-title uk-margin-remove-bottom">
-                        More
+                        <a href="#" class="uk-button uk-button-text"
+                          >Read more</a
+                        >
                       </h3>
                       <div class="uk-accordion-content">
                         <p>
@@ -448,7 +530,9 @@
                   <ul uk-accordion>
                     <li class="uk-text-left">
                       <h3 class="uk-accordion-title uk-margin-remove-bottom">
-                        More
+                        <a href="#" class="uk-button uk-button-text"
+                          >Read more</a
+                        >
                       </h3>
                       <div class="uk-accordion-content">
                         <p>
@@ -501,7 +585,9 @@
                   <ul uk-accordion>
                     <li class="uk-text-left">
                       <h3 class="uk-accordion-title uk-margin-remove-bottom">
-                        More
+                        <a href="#" class="uk-button uk-button-text"
+                          >Read more</a
+                        >
                       </h3>
                       <div class="uk-accordion-content">
                         <p>
@@ -533,35 +619,32 @@
       </div>
 
       <div
-        class="uk-section uk-section-secondary uk-background-fixed uk-background-cover"
+        class="uk-section uk-section-secondary uk-background-fixed uk-background-cover uk-background-blend-overlay"
         id="education"
         style="background-image: url(assets/img/campus.jpg)"
       >
-        <div class="uk-container uk-width-3-4@m">
-          <h1 class="uk-heading-primary uk-text-left uk-text-bold">
+        <div class="uk-container uk-width-4-5@m">
+          <h1 class="uk-heading-primary uk-text-center uk-text-bold">
             EDUCATION
           </h1>
-          <div class="uk-margin-medium-top" uk-grid>
-            <div class="uk-width-medium@m uk-text-center">
+          <div
+            class="uk-grid-large uk-flex uk-flex-middle uk-flex-center uk-margin-medium-top"
+            uk-grid
+          >
+            <div class="uk-width-auto">
               <img height="200px" width="200px" src="assets/img/umd.png" />
             </div>
-            <div class="uk-width-large@m uk-flex uk-flex-middle uk-flex-center">
-              <div
-                class="uk-card uk-card-secondary uk-padding-small translucent"
-              >
-                <h4 class="uk-margin-remove-bottom">
-                  University of Maryland, College Park
+            <div class="uk-width-auto">
+              <div class="uk-text-center">
+                <h2 class="uk-margin-remove-top uk-margin-remove-bottom">
+                  University of Maryland
+                </h2>
+                <h4 class="uk-margin-remove-top uk-margin-remove-bottom">
+                  B.S. in Computer Engineering
                 </h4>
-                <h5 class="uk-margin-remove-top">
-                  A. James Clark School of Engineering
-                </h5>
-                <p class="uk-margin-remove-bottom">Bachelor of Science</p>
-                <p class="uk-margin-remove-top uk-margin-remove-bottom">
-                  Computer Engineering
-                </p>
-                <p class="uk-margin-remove-top uk-margin-remove-bottom">
+                <h4 class="uk-margin-remove-top uk-margin-remove-bottom">
                   May 2018
-                </p>
+                </h4>
               </div>
             </div>
           </div>
@@ -569,19 +652,17 @@
       </div>
 
       <div class="uk-section uk-section-default" id="skills">
-        <div class="uk-container uk-width-3-4@m">
-          <h1 class="uk-heading-primary uk-text-left uk-text-bold">SKILLS</h1>
+        <div class="uk-container uk-width-4-5@m">
+          <h1 class="uk-heading-primary uk-text-center uk-text-bold">SKILLS</h1>
           <dl
-            class="uk-description-list uk-description-list-divider uk-text-left uk-margin-medium-top"
+            class="uk-description-list uk-description-list-divider uk-text-center uk-margin-medium-top"
           >
             <dt>Programming</dt>
-            <dd>
-              Python, TypeScript, React, Node.js, C/C++, MATLAB, HTML, CSS
-            </dd>
-            <dt>Infrastsructure</dt>
+            <dd>Python, TypeScript, React, Node.js, C++, MATLAB, HTML, CSS</dd>
+            <dt>Infrastructure</dt>
             <dd>AWS, Docker, Docker Swarm, Ansible, Jenkins, GitHub</dd>
             <dt>Operating Systems</dt>
-            <dd>macOS, Linux (Debian, Ubuntu, Alpine), UNIX</dd>
+            <dd>macOS, Linux (Debian, Ubuntu, Alpine)</dd>
             <dt>Version Control</dt>
             <dd>Git, Gerrit, Mercurial</dd>
             <dt>Languages</dt>

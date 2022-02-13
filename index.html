@@ -54,25 +54,28 @@
 
   <body>
     <div class="uk-offcanvas-content">
-      <div id="mobile-nav" uk-offcanvas="overlay: true; flip: true">
+      <div
+        id="mobile-nav"
+        uk-offcanvas="overlay: true; flip: true; selClose: .uk-nav a, .uk-offcanvas-close"
+      >
         <div class="uk-offcanvas-bar">
           <button class="uk-offcanvas-close" type="button" uk-close></button>
           <ul class="uk-nav">
             <li class="uk-nav-header">Menu</li>
             <li>
-              <a href="#about" uk-scroll
+              <a href="#about" uk-scroll="offset: 70"
                 ><span class="uk-margin-small-right" uk-icon="icon: user"></span
                 >About Me</a
               >
             </li>
             <li>
-              <a href="#portfolio" uk-scroll
+              <a href="#portfolio" uk-scroll="offset: 70"
                 ><span class="uk-margin-small-right" uk-icon="icon: code"></span
                 >Portfolio</a
               >
             </li>
             <li>
-              <a href="#experience" uk-scroll
+              <a href="#experience" uk-scroll="offset: 70"
                 ><span
                   class="uk-margin-small-right"
                   uk-icon="icon: calendar"
@@ -81,7 +84,7 @@
               >
             </li>
             <li>
-              <a href="#education" uk-scroll
+              <a href="#education" uk-scroll="offset: 70"
                 ><span
                   class="uk-margin-small-right"
                   uk-icon="icon: pencil"
@@ -90,13 +93,13 @@
               >
             </li>
             <li>
-              <a href="#skills" uk-scroll
+              <a href="#skills" uk-scroll="offset: 70"
                 ><span class="uk-margin-small-right" uk-icon="icon: list"></span
                 >Skills</a
               >
             </li>
             <li>
-              <a href="#contact" uk-scroll
+              <a href="#contact" uk-scroll="offset: 70"
                 ><span class="uk-margin-small-right" uk-icon="icon: mail"></span
                 >Contact</a
               >
@@ -204,19 +207,23 @@
           uk-scrollspy="cls: uk-animation-slide-top-small; target: > span > ; delay: 1000"
         >
           <span>
-            <h1 class="uk-heading-primary uk-margin-remove-bottom">
+            <h1
+              class="uk-heading-primary uk-heading-medium uk-margin-remove-bottom"
+            >
               Omar Abdelkader
             </h1>
           </span>
           <span>
-            <h4 id="intro-text">Software Engineer // Open Source Enthusiast</h4>
+            <h5>Software Engineer // Open Source Enthusiast</h5>
           </span>
         </div>
       </div>
 
       <div class="uk-section uk-section-default" id="about">
         <div class="uk-container uk-width-4-5@m">
-          <h1 class="uk-heading-primary uk-text-center uk-text-bold">
+          <h1
+            class="uk-heading-primary uk-heading-medium uk-text-center uk-text-bold"
+          >
             ABOUT ME
           </h1>
           <div
@@ -271,7 +278,9 @@
 
       <div class="uk-section uk-section-secondary" id="portfolio">
         <div class="uk-container uk-width-4-5@m">
-          <h1 class="uk-heading-default uk-text-center uk-text-bold">
+          <h1
+            class="uk-heading-default uk-heading-medium uk-text-center uk-text-bold"
+          >
             PORTFOLIO
           </h1>
           <div
@@ -412,10 +421,9 @@
               >
                 <div class="uk-card-media-top uk-flex uk-flex-center">
                   <iframe
-                    src="https://www.youtube.com/embed/XTTqoOtF7iE?rel=0"
+                    src="https://www.youtube.com/embed/XTTqoOtF7iE"
                     frameborder="0"
-                    allow="autoplay; encrypted-media"
-                    allowfullscreen
+                    allow="encrypted-media; fullscreen"
                     uk-responsive
                   ></iframe>
                 </div>
@@ -479,7 +487,9 @@
 
       <div class="uk-section uk-section-default" id="experience">
         <div class="uk-container uk-width-4-5@m">
-          <h1 class="uk-heading-primary uk-text-center uk-text-bold">
+          <h1
+            class="uk-heading-primary uk-heading-medium uk-text-center uk-text-bold"
+          >
             EXPERIENCE
           </h1>
           <div
@@ -638,7 +648,9 @@
         style="background-image: url(assets/img/campus.jpg)"
       >
         <div class="uk-container uk-width-4-5@m">
-          <h1 class="uk-heading-primary uk-text-center uk-text-bold">
+          <h1
+            class="uk-heading-primary uk-heading-medium uk-text-center uk-text-bold"
+          >
             EDUCATION
           </h1>
           <div
@@ -667,7 +679,11 @@
 
       <div class="uk-section uk-section-default" id="skills">
         <div class="uk-container uk-width-4-5@m">
-          <h1 class="uk-heading-primary uk-text-center uk-text-bold">SKILLS</h1>
+          <h1
+            class="uk-heading-primary uk-heading-medium uk-text-center uk-text-bold"
+          >
+            SKILLS
+          </h1>
           <dl
             class="uk-description-list uk-description-list-divider uk-text-center uk-margin-medium-top"
           >

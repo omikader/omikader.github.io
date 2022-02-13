@@ -2,21 +2,8 @@ body {
   font-family: "Ubuntu", sans-serif;
 }
 
-h1 {
-  font-size: 4vmax;
-}
-
-@media only screen and (max-width: 640px) {
-  #intro-text {
-    font-size: 4vw;
-  }
-}
-
-.uk-navbar-container:not(.uk-navbar-transparent),
-.translucent {
-  background: #111;
-  opacity: 0.8;
-  filter: alpha(opacity=80);
+.uk-navbar-container:not(.uk-navbar-transparent) {
+  background: #222;
 }
 
 .uk-navbar-container:not(.uk-navbar-transparent) > div > .uk-iconnav > li {
@@ -44,7 +31,6 @@ h1 {
 
 .uk-link-muted {
   border-bottom: 0.5px dotted #999;
-  text-decoration: none;
 }
 
 #github:hover {
